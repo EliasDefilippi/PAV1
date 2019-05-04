@@ -50,18 +50,20 @@
             // 
             // textBoxContraseña
             // 
+            this.textBoxContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxContraseña.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxContraseña.Location = new System.Drawing.Point(56, 243);
+            this.textBoxContraseña.Location = new System.Drawing.Point(56, 246);
             this.textBoxContraseña.Name = "textBoxContraseña";
-            this.textBoxContraseña.Size = new System.Drawing.Size(300, 27);
+            this.textBoxContraseña.Size = new System.Drawing.Size(297, 20);
             this.textBoxContraseña.TabIndex = 1;
             this.textBoxContraseña.UseSystemPasswordChar = true;
             this.textBoxContraseña.WordWrap = false;
             // 
             // textBoxUsuario
             // 
+            this.textBoxUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxUsuario.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsuario.Location = new System.Drawing.Point(56, 169);
+            this.textBoxUsuario.Location = new System.Drawing.Point(53, 170);
             this.textBoxUsuario.Multiline = true;
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(300, 30);
@@ -101,7 +103,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(389, 421);
+            this.ClientSize = new System.Drawing.Size(389, 394);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxUsuario);
@@ -110,7 +112,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
