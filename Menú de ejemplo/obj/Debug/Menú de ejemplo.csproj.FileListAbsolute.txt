@@ -40,3 +40,19 @@ C:\Users\efpla\Desktop\GIT\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.Propertie
 C:\Users\efpla\Desktop\GIT\Menú de ejemplo\obj\Debug\Menú de ejemplo.csproj.GenerateResource.Cache
 C:\Users\efpla\Desktop\GIT\Menú de ejemplo\obj\Debug\Menú de ejemplo.exe
 C:\Users\efpla\Desktop\GIT\Menú de ejemplo\obj\Debug\Menú de ejemplo.pdb
+E:\pav vs\PAV1\Menú de ejemplo\bin\Debug\Menú de ejemplo.exe.config
+E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú de ejemplo.exe
+E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú de ejemplo.pdb
+E:\pav vs\PAV1\Menú de ejemplo\bin\Debug\Menú de ejemplo.exe
+E:\pav vs\PAV1\Menú de ejemplo\bin\Debug\Menú de ejemplo.pdb
+E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú de ejemplo.csprojResolveAssemblyReference.cache
+E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.buscarVuelosYdestinos.resources
+E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.Formularios.Crear_Usuario.DatosDeLaCuenta_CrearUsuario.resources
+E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.Formularios.datos_personales_CrearUsuario.resources
+E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.Formularios.SeleccionPais_CrearUsuario.resources
+E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.Login.resources
+E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.menuPrincipal.resources
+E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.Properties.Resources.resources
+E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú de ejemplo.csproj.GenerateResource.Cache
+E:\pav vs\PAV1\Menú de ejemplo\bin\Debug\Mi_Liberia_LF.dll
+E:\pav vs\PAV1\Menú de ejemplo\bin\Debug\Mi_Liberia_LF.pdb
