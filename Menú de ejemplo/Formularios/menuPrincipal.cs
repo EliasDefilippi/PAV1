@@ -60,5 +60,11 @@ namespace Menú_de_ejemplo
             Formularios.SeleccionPais_CrearUsuario ventanaSelecPais = new Formularios.SeleccionPais_CrearUsuario();
             ventanaSelecPais.Show();
         }
+
+        private void buttonCrearTramo_Click(object sender, EventArgs e)
+        {
+            Formularios.CrearTramo formCrearTramo = new Formularios.CrearTramo();
+            formCrearTramo.Show();
+        }
     }
 }
