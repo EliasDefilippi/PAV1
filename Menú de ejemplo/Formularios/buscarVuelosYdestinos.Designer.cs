@@ -35,25 +35,32 @@
             this.checkBoxIda = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.comboBoxOrigen = new System.Windows.Forms.ComboBox();
+            this.localidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboxlocalidadBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.combox_localidad = new Menú_de_ejemplo.combox_localidad();
             this.comboBoxDestino = new System.Windows.Forms.ComboBox();
             this.comboBoxPasajeros = new System.Windows.Forms.ComboBox();
             this.comboBoxCabina = new System.Windows.Forms.ComboBox();
+            this.categoriapasajeroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboxlocalidadBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.textBoxCodigoPromocional = new System.Windows.Forms.TextBox();
             this.dateTimeIDA = new System.Windows.Forms.DateTimePicker();
             this.dateTimeVUELTA = new System.Windows.Forms.DateTimePicker();
             this.botonCerrarVuelosDestinos = new System.Windows.Forms.Button();
-            this.combox_localidad = new Menú_de_ejemplo.combox_localidad();
-            this.comboxlocalidadBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.localidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.localidadesTableAdapter = new Menú_de_ejemplo.combox_localidadTableAdapters.localidadesTableAdapter();
-            this.comboxlocalidadBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.categoriapasajeroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categoria_pasajeroTableAdapter = new Menú_de_ejemplo.combox_localidadTableAdapters.categoria_pasajeroTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboxlocalidadBindingSource)).BeginInit();
+            this.comboxlocalidadBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.localidades2 = new Menú_de_ejemplo.localidades2();
+            this.localidadesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.localidadesTableAdapter1 = new Menú_de_ejemplo.localidades2TableAdapters.localidadesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.localidadesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboxlocalidadBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboxlocalidadBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriapasajeroBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboxlocalidadBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboxlocalidadBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.localidades2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.localidadesBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // botonBuscarVuelos
@@ -111,9 +118,24 @@
             this.comboBoxOrigen.ValueMember = "id_localidad";
             this.comboBoxOrigen.SelectedIndexChanged += new System.EventHandler(this.comboBoxOrigen_SelectedIndexChanged);
             // 
+            // localidadesBindingSource
+            // 
+            this.localidadesBindingSource.DataMember = "localidades";
+            this.localidadesBindingSource.DataSource = this.comboxlocalidadBindingSource;
+            // 
+            // comboxlocalidadBindingSource
+            // 
+            this.comboxlocalidadBindingSource.DataSource = this.combox_localidad;
+            this.comboxlocalidadBindingSource.Position = 0;
+            // 
+            // combox_localidad
+            // 
+            this.combox_localidad.DataSetName = "combox_localidad";
+            this.combox_localidad.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // comboBoxDestino
             // 
-            this.comboBoxDestino.DataSource = this.localidadesBindingSource;
+            this.comboBoxDestino.DataSource = this.localidadesBindingSource1;
             this.comboBoxDestino.DisplayMember = "nombre_localidad";
             this.comboBoxDestino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxDestino.FormattingEnabled = true;
@@ -143,6 +165,16 @@
             this.comboBoxCabina.Size = new System.Drawing.Size(293, 21);
             this.comboBoxCabina.TabIndex = 7;
             this.comboBoxCabina.ValueMember = "id_categoria";
+            // 
+            // categoriapasajeroBindingSource
+            // 
+            this.categoriapasajeroBindingSource.DataMember = "categoria_pasajero";
+            this.categoriapasajeroBindingSource.DataSource = this.comboxlocalidadBindingSource1;
+            // 
+            // comboxlocalidadBindingSource1
+            // 
+            this.comboxlocalidadBindingSource1.DataSource = this.combox_localidad;
+            this.comboxlocalidadBindingSource1.Position = 0;
             // 
             // textBoxCodigoPromocional
             // 
@@ -179,38 +211,32 @@
             this.botonCerrarVuelosDestinos.UseVisualStyleBackColor = true;
             this.botonCerrarVuelosDestinos.Click += new System.EventHandler(this.botonCerrarVuelosDestinos_Click);
             // 
-            // combox_localidad
-            // 
-            this.combox_localidad.DataSetName = "combox_localidad";
-            this.combox_localidad.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // comboxlocalidadBindingSource
-            // 
-            this.comboxlocalidadBindingSource.DataSource = this.combox_localidad;
-            this.comboxlocalidadBindingSource.Position = 0;
-            // 
-            // localidadesBindingSource
-            // 
-            this.localidadesBindingSource.DataMember = "localidades";
-            this.localidadesBindingSource.DataSource = this.comboxlocalidadBindingSource;
-            // 
             // localidadesTableAdapter
             // 
             this.localidadesTableAdapter.ClearBeforeFill = true;
             // 
-            // comboxlocalidadBindingSource1
-            // 
-            this.comboxlocalidadBindingSource1.DataSource = this.combox_localidad;
-            this.comboxlocalidadBindingSource1.Position = 0;
-            // 
-            // categoriapasajeroBindingSource
-            // 
-            this.categoriapasajeroBindingSource.DataMember = "categoria_pasajero";
-            this.categoriapasajeroBindingSource.DataSource = this.comboxlocalidadBindingSource1;
-            // 
             // categoria_pasajeroTableAdapter
             // 
             this.categoria_pasajeroTableAdapter.ClearBeforeFill = true;
+            // 
+            // comboxlocalidadBindingSource2
+            // 
+            this.comboxlocalidadBindingSource2.DataSource = this.combox_localidad;
+            this.comboxlocalidadBindingSource2.Position = 0;
+            // 
+            // localidades2
+            // 
+            this.localidades2.DataSetName = "localidades2";
+            this.localidades2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // localidadesBindingSource1
+            // 
+            this.localidadesBindingSource1.DataMember = "localidades";
+            this.localidadesBindingSource1.DataSource = this.localidades2;
+            // 
+            // localidadesTableAdapter1
+            // 
+            this.localidadesTableAdapter1.ClearBeforeFill = true;
             // 
             // buscarVuelosYdestinos
             // 
@@ -236,11 +262,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "buscarVuelosYdestinos";
             this.Load += new System.EventHandler(this.buscarVuelosYdestinos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboxlocalidadBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.localidadesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboxlocalidadBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboxlocalidadBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriapasajeroBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboxlocalidadBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboxlocalidadBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.localidades2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.localidadesBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,5 +296,9 @@
         private System.Windows.Forms.BindingSource comboxlocalidadBindingSource1;
         private System.Windows.Forms.BindingSource categoriapasajeroBindingSource;
         private combox_localidadTableAdapters.categoria_pasajeroTableAdapter categoria_pasajeroTableAdapter;
+        private System.Windows.Forms.BindingSource comboxlocalidadBindingSource2;
+        private localidades2 localidades2;
+        private System.Windows.Forms.BindingSource localidadesBindingSource1;
+        private localidades2TableAdapters.localidadesTableAdapter localidadesTableAdapter1;
     }
 }

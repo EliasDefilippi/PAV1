@@ -95,7 +95,7 @@
             this.textBoxUsuario.Location = new System.Drawing.Point(56, 174);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(297, 20);
-            this.textBoxUsuario.SoloNumeros = true;
+            this.textBoxUsuario.SoloNumeros = false;
             this.textBoxUsuario.TabIndex = 5;
             this.textBoxUsuario.Validar = true;
             // 

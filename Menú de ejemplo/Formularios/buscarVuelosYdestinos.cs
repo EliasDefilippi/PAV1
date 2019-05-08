@@ -29,6 +29,8 @@ namespace Menú_de_ejemplo
 
         private void buscarVuelosYdestinos_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'localidades2.localidades' Puede moverla o quitarla según sea necesario.
+            this.localidadesTableAdapter1.Fill(this.localidades2.localidades);
             // TODO: esta línea de código carga datos en la tabla 'combox_localidad.categoria_pasajero' Puede moverla o quitarla según sea necesario.
             this.categoria_pasajeroTableAdapter.Fill(this.combox_localidad.categoria_pasajero);
             // TODO: esta línea de código carga datos en la tabla 'combox_localidad.localidades' Puede moverla o quitarla según sea necesario.

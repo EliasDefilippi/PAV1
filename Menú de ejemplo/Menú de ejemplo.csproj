@@ -49,6 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="aeropuertos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aeropuertos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="aeropuertosDetinos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aeropuertosDetinos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="combox_localidad.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -122,6 +132,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LAFAST_gestor_de_reservas_Localidad.xsd</DependentUpon>
     </Compile>
+    <Compile Include="localidades2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>localidades2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\buscarVuelosYdestinos.resx">
@@ -157,6 +172,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="aeropuertos.xsc">
+      <DependentUpon>aeropuertos.xsd</DependentUpon>
+    </None>
+    <None Include="aeropuertos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aeropuertos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aeropuertos.xss">
+      <DependentUpon>aeropuertos.xsd</DependentUpon>
+    </None>
+    <None Include="aeropuertosDetinos.xsc">
+      <DependentUpon>aeropuertosDetinos.xsd</DependentUpon>
+    </None>
+    <None Include="aeropuertosDetinos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aeropuertosDetinos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aeropuertosDetinos.xss">
+      <DependentUpon>aeropuertosDetinos.xsd</DependentUpon>
+    </None>
     <None Include="combox_localidad.xsc">
       <DependentUpon>combox_localidad.xsd</DependentUpon>
     </None>
@@ -211,6 +248,17 @@
     </None>
     <None Include="LAFAST_gestor_de_reservas_Localidad.xss">
       <DependentUpon>LAFAST_gestor_de_reservas_Localidad.xsd</DependentUpon>
+    </None>
+    <None Include="localidades2.xsc">
+      <DependentUpon>localidades2.xsd</DependentUpon>
+    </None>
+    <None Include="localidades2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>localidades2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="localidades2.xss">
+      <DependentUpon>localidades2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

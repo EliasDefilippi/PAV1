@@ -23,5 +23,14 @@ namespace Menú_de_ejemplo.Formularios
             this.Close();
             vueloElegido.Show();
         }
+
+        private void CrearTramo_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'aeropuertosDetinos.aeropuertos' Puede moverla o quitarla según sea necesario.
+            this.aeropuertosTableAdapter1.Fill(this.aeropuertosDetinos.aeropuertos);
+            // TODO: esta línea de código carga datos en la tabla 'aeropuertos._aeropuertos' Puede moverla o quitarla según sea necesario.
+            this.aeropuertosTableAdapter.Fill(this.aeropuertos._aeropuertos);
+
+        }
     }
 }
