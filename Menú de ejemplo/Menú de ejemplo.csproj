@@ -52,6 +52,12 @@
     <Compile Include="Formularios\buscarVuelosYdestinos.Designer.cs">
       <DependentUpon>buscarVuelosYdestinos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\CrearTramo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CrearTramo.Designer.cs">
+      <DependentUpon>CrearTramo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\DatosDeLaCuenta_CrearUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     <Compile Include="Formularios\menuPrincipal.Designer.cs">
       <DependentUpon>menuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\SeleccionDeVuelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\SeleccionDeVuelo.Designer.cs">
+      <DependentUpon>SeleccionDeVuelo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\SeleccionPais_CrearUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,11 +99,17 @@
     <EmbeddedResource Include="Formularios\buscarVuelosYdestinos.resx">
       <DependentUpon>buscarVuelosYdestinos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CrearTramo.resx">
+      <DependentUpon>CrearTramo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\DatosDeLaCuenta_CrearUsuario.resx">
       <DependentUpon>DatosDeLaCuenta_CrearUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\datos_personales_CrearUsuario.resx">
       <DependentUpon>datos_personales_CrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\SeleccionDeVuelo.resx">
+      <DependentUpon>SeleccionDeVuelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\SeleccionPais_CrearUsuario.resx">
       <DependentUpon>SeleccionPais_CrearUsuario.cs</DependentUpon>
