@@ -1,0 +1,5 @@
+E:\pav vs\PAV1\Mi_Liberia_LF\bin\Debug\Mi_Liberia_LF.dll
+E:\pav vs\PAV1\Mi_Liberia_LF\bin\Debug\Mi_Liberia_LF.pdb
+E:\pav vs\PAV1\Mi_Liberia_LF\obj\Debug\Mi_Liberia_LF.csprojResolveAssemblyReference.cache
+E:\pav vs\PAV1\Mi_Liberia_LF\obj\Debug\Mi_Liberia_LF.dll
+E:\pav vs\PAV1\Mi_Liberia_LF\obj\Debug\Mi_Liberia_LF.pdb

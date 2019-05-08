@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mi_Liberia_LF">
+      <HintPath>..\Mi_Liberia_LF\bin\Debug\Mi_Liberia_LF.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="combox_localidad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>combox_localidad.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\buscarVuelosYdestinos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +102,26 @@
     <Compile Include="Formularios\SeleccionPais_CrearUsuario.Designer.cs">
       <DependentUpon>SeleccionPais_CrearUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="LAFAST_gestor_de_reservas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAFAST_gestor_de_reservas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LAFAST_gestor_de_reservasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAFAST_gestor_de_reservasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LAFAST_gestor_de_reservasDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAFAST_gestor_de_reservasDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LAFAST_gestor_de_reservas_Localidad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAFAST_gestor_de_reservas_Localidad.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\buscarVuelosYdestinos.resx">
@@ -129,6 +157,61 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="combox_localidad.xsc">
+      <DependentUpon>combox_localidad.xsd</DependentUpon>
+    </None>
+    <None Include="combox_localidad.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>combox_localidad.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="combox_localidad.xss">
+      <DependentUpon>combox_localidad.xsd</DependentUpon>
+    </None>
+    <None Include="LAFAST_gestor_de_reservas.xsc">
+      <DependentUpon>LAFAST_gestor_de_reservas.xsd</DependentUpon>
+    </None>
+    <None Include="LAFAST_gestor_de_reservas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LAFAST_gestor_de_reservas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LAFAST_gestor_de_reservas.xss">
+      <DependentUpon>LAFAST_gestor_de_reservas.xsd</DependentUpon>
+    </None>
+    <None Include="LAFAST_gestor_de_reservasDataSet.xsc">
+      <DependentUpon>LAFAST_gestor_de_reservasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LAFAST_gestor_de_reservasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LAFAST_gestor_de_reservasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LAFAST_gestor_de_reservasDataSet.xss">
+      <DependentUpon>LAFAST_gestor_de_reservasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LAFAST_gestor_de_reservasDataSet1.xsc">
+      <DependentUpon>LAFAST_gestor_de_reservasDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LAFAST_gestor_de_reservasDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LAFAST_gestor_de_reservasDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LAFAST_gestor_de_reservasDataSet1.xss">
+      <DependentUpon>LAFAST_gestor_de_reservasDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LAFAST_gestor_de_reservas_Localidad.xsc">
+      <DependentUpon>LAFAST_gestor_de_reservas_Localidad.xsd</DependentUpon>
+    </None>
+    <None Include="LAFAST_gestor_de_reservas_Localidad.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LAFAST_gestor_de_reservas_Localidad.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LAFAST_gestor_de_reservas_Localidad.xss">
+      <DependentUpon>LAFAST_gestor_de_reservas_Localidad.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
