@@ -94,6 +94,11 @@
     <Compile Include="Formularios\SeleccionPais_CrearUsuario.Designer.cs">
       <DependentUpon>SeleccionPais_CrearUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="localidades.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>localidades.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\buscarVuelosYdestinos.resx">
@@ -129,6 +134,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="localidades.xsc">
+      <DependentUpon>localidades.xsd</DependentUpon>
+    </None>
+    <None Include="localidades.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>localidades.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="localidades.xss">
+      <DependentUpon>localidades.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
