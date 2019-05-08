@@ -40,3 +40,5 @@ C:\Users\efpla\Desktop\GIT\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.Propertie
 C:\Users\efpla\Desktop\GIT\Menú de ejemplo\obj\Debug\Menú de ejemplo.csproj.GenerateResource.Cache
 C:\Users\efpla\Desktop\GIT\Menú de ejemplo\obj\Debug\Menú de ejemplo.exe
 C:\Users\efpla\Desktop\GIT\Menú de ejemplo\obj\Debug\Menú de ejemplo.pdb
+C:\Users\efpla\Desktop\GIT\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.Formularios.CrearTramo.resources
+C:\Users\efpla\Desktop\GIT\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.Formularios.SeleccionDeVuelo.resources

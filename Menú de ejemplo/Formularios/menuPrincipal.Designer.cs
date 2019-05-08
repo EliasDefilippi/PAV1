@@ -34,7 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonCrearTramo = new System.Windows.Forms.Button();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.botonCerrarInicio = new System.Windows.Forms.Button();
             this.botonMaximizarInicio = new System.Windows.Forms.Button();
@@ -90,26 +90,27 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(36, 288);
+            this.button3.Location = new System.Drawing.Point(36, 493);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(165, 50);
             this.button3.TabIndex = 5;
             this.button3.Text = "Información para tu viaje";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // buttonCrearTramo
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Location = new System.Drawing.Point(36, 359);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(165, 50);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "LAFAST Pass";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonCrearTramo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCrearTramo.BackgroundImage")));
+            this.buttonCrearTramo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonCrearTramo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCrearTramo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCrearTramo.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonCrearTramo.Location = new System.Drawing.Point(36, 424);
+            this.buttonCrearTramo.Name = "buttonCrearTramo";
+            this.buttonCrearTramo.Size = new System.Drawing.Size(165, 50);
+            this.buttonCrearTramo.TabIndex = 6;
+            this.buttonCrearTramo.Text = "Crear Tramo";
+            this.buttonCrearTramo.UseVisualStyleBackColor = true;
+            this.buttonCrearTramo.Click += new System.EventHandler(this.buttonCrearTramo_Click);
             // 
             // btnIniciarSesion
             // 
@@ -118,7 +119,7 @@
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(36, 427);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(36, 286);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(165, 50);
             this.btnIniciarSesion.TabIndex = 7;
@@ -169,7 +170,7 @@
             this.buttonInscribete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonInscribete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInscribete.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInscribete.Location = new System.Drawing.Point(36, 495);
+            this.buttonInscribete.Location = new System.Drawing.Point(36, 356);
             this.buttonInscribete.Name = "buttonInscribete";
             this.buttonInscribete.Size = new System.Drawing.Size(165, 50);
             this.buttonInscribete.TabIndex = 11;
@@ -188,7 +189,7 @@
             this.Controls.Add(this.botonMaximizarInicio);
             this.Controls.Add(this.botonCerrarInicio);
             this.Controls.Add(this.btnIniciarSesion);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.buttonCrearTramo);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
@@ -210,7 +211,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonCrearTramo;
         private System.Windows.Forms.Button btnIniciarSesion;
         private System.Windows.Forms.Button botonCerrarInicio;
         private System.Windows.Forms.Button botonMaximizarInicio;
