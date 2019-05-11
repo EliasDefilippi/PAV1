@@ -97,6 +97,18 @@
     <Compile Include="Formularios\menuPrincipal.Designer.cs">
       <DependentUpon>menuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\RegistrarAeropuerto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RegistrarAeropuerto.Designer.cs">
+      <DependentUpon>RegistrarAeropuerto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\RegistrarLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RegistrarLocalidad.Designer.cs">
+      <DependentUpon>RegistrarLocalidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\SeleccionDeVuelo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +144,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\datos_personales_CrearUsuario.resx">
       <DependentUpon>datos_personales_CrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RegistrarAeropuerto.resx">
+      <DependentUpon>RegistrarAeropuerto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RegistrarLocalidad.resx">
+      <DependentUpon>RegistrarLocalidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\SeleccionDeVuelo.resx">
       <DependentUpon>SeleccionDeVuelo.cs</DependentUpon>
