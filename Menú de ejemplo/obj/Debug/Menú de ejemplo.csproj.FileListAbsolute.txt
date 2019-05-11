@@ -60,3 +60,6 @@ E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.Login.resources
 E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.menuPrincipal.resources
 E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú_de_ejemplo.Properties.Resources.resources
 E:\pav vs\PAV1\Menú de ejemplo\obj\Debug\Menú de ejemplo.csproj.GenerateResource.Cache
+C:\Users\valentin\Documents\GIT\PAV1\PAV1.git\Menú de ejemplo\bin\Debug\Menú de ejemplo.exe.config
+C:\Users\valentin\Documents\GIT\PAV1\PAV1.git\Menú de ejemplo\obj\Debug\Menú de ejemplo.exe
+C:\Users\valentin\Documents\GIT\PAV1\PAV1.git\Menú de ejemplo\obj\Debug\Menú de ejemplo.pdb

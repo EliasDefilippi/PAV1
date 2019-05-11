@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="aeropuertos.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -62,8 +61,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>combox_localidad.xsd</DependentUpon>
     </Compile>
-=======
->>>>>>> origin/correccionV2
     <Compile Include="Formularios\buscarVuelosYdestinos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,7 +154,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <None Include="aeropuertos.xsc">
       <DependentUpon>aeropuertos.xsd</DependentUpon>
     </None>
@@ -226,10 +222,10 @@
     </None>
     <None Include="LAFAST_gestor_de_reservas_Localidad.xsc">
       <DependentUpon>LAFAST_gestor_de_reservas_Localidad.xsd</DependentUpon>
-=======
+      </None>
     <None Include="localidades.xsc">
       <DependentUpon>localidades.xsd</DependentUpon>
->>>>>>> origin/correccionV2
+
     </None>
     <None Include="localidades.xsd">
       <Generator>MSDataSetGenerator</Generator>
