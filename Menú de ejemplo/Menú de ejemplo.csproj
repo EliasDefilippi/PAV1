@@ -73,6 +73,12 @@
     <Compile Include="Formularios\CrearTramo.Designer.cs">
       <DependentUpon>CrearTramo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\CrearVuelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CrearVuelo.Designer.cs">
+      <DependentUpon>CrearVuelo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\DatosDeLaCuenta_CrearUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CrearTramo.resx">
       <DependentUpon>CrearTramo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CrearVuelo.resx">
+      <DependentUpon>CrearVuelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\DatosDeLaCuenta_CrearUsuario.resx">
       <DependentUpon>DatosDeLaCuenta_CrearUsuario.cs</DependentUpon>
