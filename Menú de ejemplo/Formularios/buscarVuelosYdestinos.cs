@@ -31,7 +31,7 @@ namespace Menú_de_ejemplo
             if (comboBoxOrigen.SelectedValue.Equals
                 (comboBoxDestino.SelectedValue))
             {
-                MessageBox.Show("No se puede seleccionar una pais del mismo origen que destino");
+                MessageBox.Show("No se puede seleccionar un pais del mismo origen que destino");
                 comboBoxDestino.SelectedValue = 0;
             }
         }
