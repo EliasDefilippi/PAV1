@@ -78,5 +78,11 @@ namespace Menú_de_ejemplo
             Formularios.CrearVuelo newFligth = new Formularios.CrearVuelo();
             newFligth.Show();
         }
+
+        private void buttonCrearTarifa_Click(object sender, EventArgs e)
+        {
+            Formularios.CrearTarifa newTarifa = new Formularios.CrearTarifa();
+            newTarifa.Show();
+        }
     }
 }

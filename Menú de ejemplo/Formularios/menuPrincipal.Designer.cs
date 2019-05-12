@@ -42,6 +42,7 @@
             this.buttonInscribete = new System.Windows.Forms.Button();
             this.buttonRegistrarAeropuerto = new System.Windows.Forms.Button();
             this.buttonCrearVuelo = new System.Windows.Forms.Button();
+            this.buttonCrearTarifa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -206,12 +207,26 @@
             this.buttonCrearVuelo.UseVisualStyleBackColor = true;
             this.buttonCrearVuelo.Click += new System.EventHandler(this.buttonCrearVuelo_Click);
             // 
+            // buttonCrearTarifa
+            // 
+            this.buttonCrearTarifa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCrearTarifa.BackgroundImage")));
+            this.buttonCrearTarifa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCrearTarifa.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCrearTarifa.Location = new System.Drawing.Point(36, 541);
+            this.buttonCrearTarifa.Name = "buttonCrearTarifa";
+            this.buttonCrearTarifa.Size = new System.Drawing.Size(165, 50);
+            this.buttonCrearTarifa.TabIndex = 14;
+            this.buttonCrearTarifa.Text = "Crear Tarifa";
+            this.buttonCrearTarifa.UseVisualStyleBackColor = true;
+            this.buttonCrearTarifa.Click += new System.EventHandler(this.buttonCrearTarifa_Click);
+            // 
             // menuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1368, 788);
+            this.Controls.Add(this.buttonCrearTarifa);
             this.Controls.Add(this.buttonCrearVuelo);
             this.Controls.Add(this.buttonRegistrarAeropuerto);
             this.Controls.Add(this.buttonInscribete);
@@ -249,6 +264,7 @@
         private System.Windows.Forms.Button buttonInscribete;
         private System.Windows.Forms.Button buttonRegistrarAeropuerto;
         private System.Windows.Forms.Button buttonCrearVuelo;
+        private System.Windows.Forms.Button buttonCrearTarifa;
     }
 }
 
