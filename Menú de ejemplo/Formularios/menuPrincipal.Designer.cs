@@ -40,6 +40,7 @@
             this.botonMaximizarInicio = new System.Windows.Forms.Button();
             this.botonMinimizarInicio = new System.Windows.Forms.Button();
             this.buttonInscribete = new System.Windows.Forms.Button();
+            this.buttonRegistrarAeropuerto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +52,7 @@
             this.buttonVuelosYdestinos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonVuelosYdestinos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVuelosYdestinos.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonVuelosYdestinos.Location = new System.Drawing.Point(36, 141);
+            this.buttonVuelosYdestinos.Location = new System.Drawing.Point(36, 91);
             this.buttonVuelosYdestinos.Name = "buttonVuelosYdestinos";
             this.buttonVuelosYdestinos.Size = new System.Drawing.Size(165, 50);
             this.buttonVuelosYdestinos.TabIndex = 2;
@@ -66,7 +67,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(36, 215);
+            this.button2.Location = new System.Drawing.Point(36, 147);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(165, 50);
             this.button2.TabIndex = 3;
@@ -90,7 +91,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(36, 493);
+            this.button3.Location = new System.Drawing.Point(36, 371);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(165, 50);
             this.button3.TabIndex = 5;
@@ -104,7 +105,7 @@
             this.buttonCrearTramo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCrearTramo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCrearTramo.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonCrearTramo.Location = new System.Drawing.Point(36, 424);
+            this.buttonCrearTramo.Location = new System.Drawing.Point(36, 315);
             this.buttonCrearTramo.Name = "buttonCrearTramo";
             this.buttonCrearTramo.Size = new System.Drawing.Size(165, 50);
             this.buttonCrearTramo.TabIndex = 6;
@@ -119,7 +120,7 @@
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(36, 286);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(36, 203);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(165, 50);
             this.btnIniciarSesion.TabIndex = 7;
@@ -170,7 +171,7 @@
             this.buttonInscribete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonInscribete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInscribete.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInscribete.Location = new System.Drawing.Point(36, 356);
+            this.buttonInscribete.Location = new System.Drawing.Point(36, 259);
             this.buttonInscribete.Name = "buttonInscribete";
             this.buttonInscribete.Size = new System.Drawing.Size(165, 50);
             this.buttonInscribete.TabIndex = 11;
@@ -178,12 +179,26 @@
             this.buttonInscribete.UseVisualStyleBackColor = true;
             this.buttonInscribete.Click += new System.EventHandler(this.buttonInscribete_Click);
             // 
+            // buttonRegistrarAeropuerto
+            // 
+            this.buttonRegistrarAeropuerto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRegistrarAeropuerto.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRegistrarAeropuerto.Image = ((System.Drawing.Image)(resources.GetObject("buttonRegistrarAeropuerto.Image")));
+            this.buttonRegistrarAeropuerto.Location = new System.Drawing.Point(36, 427);
+            this.buttonRegistrarAeropuerto.Name = "buttonRegistrarAeropuerto";
+            this.buttonRegistrarAeropuerto.Size = new System.Drawing.Size(165, 50);
+            this.buttonRegistrarAeropuerto.TabIndex = 12;
+            this.buttonRegistrarAeropuerto.Text = "Registrar Aeropuerto";
+            this.buttonRegistrarAeropuerto.UseVisualStyleBackColor = true;
+            this.buttonRegistrarAeropuerto.Click += new System.EventHandler(this.buttonRegistrarAeropuerto_Click);
+            // 
             // menuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1368, 788);
+            this.Controls.Add(this.buttonRegistrarAeropuerto);
             this.Controls.Add(this.buttonInscribete);
             this.Controls.Add(this.botonMinimizarInicio);
             this.Controls.Add(this.botonMaximizarInicio);
@@ -217,6 +232,7 @@
         private System.Windows.Forms.Button botonMaximizarInicio;
         private System.Windows.Forms.Button botonMinimizarInicio;
         private System.Windows.Forms.Button buttonInscribete;
+        private System.Windows.Forms.Button buttonRegistrarAeropuerto;
     }
 }
 

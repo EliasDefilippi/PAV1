@@ -66,5 +66,11 @@ namespace Menú_de_ejemplo
             Formularios.CrearTramo formCrearTramo = new Formularios.CrearTramo();
             formCrearTramo.Show();
         }
+
+        private void buttonRegistrarAeropuerto_Click(object sender, EventArgs e)
+        {
+            Formularios.RegistrarAeropuerto newAirport = new Formularios.RegistrarAeropuerto();
+            newAirport.Show();
+        }
     }
 }

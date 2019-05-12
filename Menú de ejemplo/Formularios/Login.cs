@@ -52,9 +52,9 @@ namespace Menú_de_ejemplo
                         MessageBox.Show("Los datos ingresados sn incorrectos.");
                     }
                 }
-                catch (Exception error)
+                catch (Exception )
                 {
-                    MessageBox.Show("Error de conexion: " + error.Message);
+                    MessageBox.Show("El usuario no existe");
                 }
 
             }
