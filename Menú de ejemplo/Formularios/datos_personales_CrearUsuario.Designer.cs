@@ -28,21 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(datos_personales_CrearUsuario));
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.textBoxApellido = new System.Windows.Forms.TextBox();
             this.textBoxNumeroTelefono = new System.Windows.Forms.TextBox();
-            this.textBoxDiaNac = new System.Windows.Forms.TextBox();
-            this.textBoxAñoNac = new System.Windows.Forms.TextBox();
             this.textBoxCodigoPais = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBoxPaisEmisionDocu = new System.Windows.Forms.ComboBox();
+            this.paisesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.localidades = new Menú_de_ejemplo.localidades();
             this.comboBoxTipoDocumento = new System.Windows.Forms.ComboBox();
+            this.tipodocumentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBoxNumeroDocumento = new System.Windows.Forms.TextBox();
             this.checkBoxTerminosYcondiciones = new System.Windows.Forms.CheckBox();
             this.buttonCrearCuenta = new System.Windows.Forms.Button();
+            this.textBoxAñoNac = new System.Windows.Forms.TextBox();
             this.comboBoxMesFechaNac = new System.Windows.Forms.ComboBox();
+            this.paisesTableAdapter = new Menú_de_ejemplo.localidadesTableAdapters.paisesTableAdapter();
+            this.tipo_documentoTableAdapter = new Menú_de_ejemplo.localidadesTableAdapters.tipo_documentoTableAdapter();
+            this.comBoxDiaNac = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.paisesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.localidades)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipodocumentoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxNombre
@@ -70,26 +79,8 @@
             this.textBoxNumeroTelefono.Location = new System.Drawing.Point(130, 407);
             this.textBoxNumeroTelefono.Name = "textBoxNumeroTelefono";
             this.textBoxNumeroTelefono.Size = new System.Drawing.Size(251, 26);
-            this.textBoxNumeroTelefono.TabIndex = 3;
+            this.textBoxNumeroTelefono.TabIndex = 7;
             this.textBoxNumeroTelefono.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // textBoxDiaNac
-            // 
-            this.textBoxDiaNac.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxDiaNac.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDiaNac.Location = new System.Drawing.Point(55, 270);
-            this.textBoxDiaNac.Name = "textBoxDiaNac";
-            this.textBoxDiaNac.Size = new System.Drawing.Size(56, 26);
-            this.textBoxDiaNac.TabIndex = 4;
-            // 
-            // textBoxAñoNac
-            // 
-            this.textBoxAñoNac.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxAñoNac.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAñoNac.Location = new System.Drawing.Point(281, 270);
-            this.textBoxAñoNac.Name = "textBoxAñoNac";
-            this.textBoxAñoNac.Size = new System.Drawing.Size(100, 26);
-            this.textBoxAñoNac.TabIndex = 5;
             // 
             // textBoxCodigoPais
             // 
@@ -123,51 +114,42 @@
             // 
             // comboBoxPaisEmisionDocu
             // 
+            this.comboBoxPaisEmisionDocu.DataSource = this.paisesBindingSource;
+            this.comboBoxPaisEmisionDocu.DisplayMember = "nombre_pais";
             this.comboBoxPaisEmisionDocu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxPaisEmisionDocu.FormattingEnabled = true;
-            this.comboBoxPaisEmisionDocu.Items.AddRange(new object[] {
-            "Argentina",
-            "Aruba",
-            "Bahamas",
-            "Belice",
-            "Bolivia",
-            "Brasil",
-            "Canadá",
-            "Chile",
-            "Colombia",
-            "Costa Rica",
-            "Cuba",
-            "Ecuador",
-            "El Salvador",
-            "Estados Unidos",
-            "Guatemala",
-            "Haití",
-            "Honduras",
-            "Jamaica",
-            "México",
-            "Nicaragua",
-            "Panamá",
-            "Paraguay",
-            "Perú",
-            "Uruguay",
-            "República Dominicana",
-            "Venezuela"});
             this.comboBoxPaisEmisionDocu.Location = new System.Drawing.Point(501, 92);
             this.comboBoxPaisEmisionDocu.Name = "comboBoxPaisEmisionDocu";
             this.comboBoxPaisEmisionDocu.Size = new System.Drawing.Size(324, 34);
-            this.comboBoxPaisEmisionDocu.TabIndex = 10;
+            this.comboBoxPaisEmisionDocu.TabIndex = 8;
+            this.comboBoxPaisEmisionDocu.ValueMember = "id_pais";
+            // 
+            // paisesBindingSource
+            // 
+            this.paisesBindingSource.DataMember = "paises";
+            this.paisesBindingSource.DataSource = this.localidades;
+            // 
+            // localidades
+            // 
+            this.localidades.DataSetName = "localidades";
+            this.localidades.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // comboBoxTipoDocumento
             // 
+            this.comboBoxTipoDocumento.DataSource = this.tipodocumentoBindingSource;
+            this.comboBoxTipoDocumento.DisplayMember = "desc_tipo_doc";
             this.comboBoxTipoDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxTipoDocumento.FormattingEnabled = true;
-            this.comboBoxTipoDocumento.Items.AddRange(new object[] {
-            "DNI",
-            "Pasaporte"});
             this.comboBoxTipoDocumento.Location = new System.Drawing.Point(501, 181);
             this.comboBoxTipoDocumento.Name = "comboBoxTipoDocumento";
             this.comboBoxTipoDocumento.Size = new System.Drawing.Size(324, 34);
-            this.comboBoxTipoDocumento.TabIndex = 12;
+            this.comboBoxTipoDocumento.TabIndex = 9;
+            this.comboBoxTipoDocumento.ValueMember = "id_tipo_documento";
+            // 
+            // tipodocumentoBindingSource
+            // 
+            this.tipodocumentoBindingSource.DataMember = "tipo_documento";
+            this.tipodocumentoBindingSource.DataSource = this.localidades;
             // 
             // textBoxNumeroDocumento
             // 
@@ -175,7 +157,7 @@
             this.textBoxNumeroDocumento.Location = new System.Drawing.Point(501, 270);
             this.textBoxNumeroDocumento.Name = "textBoxNumeroDocumento";
             this.textBoxNumeroDocumento.Size = new System.Drawing.Size(324, 26);
-            this.textBoxNumeroDocumento.TabIndex = 13;
+            this.textBoxNumeroDocumento.TabIndex = 10;
             // 
             // checkBoxTerminosYcondiciones
             // 
@@ -185,7 +167,7 @@
             this.checkBoxTerminosYcondiciones.Location = new System.Drawing.Point(501, 357);
             this.checkBoxTerminosYcondiciones.Name = "checkBoxTerminosYcondiciones";
             this.checkBoxTerminosYcondiciones.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxTerminosYcondiciones.TabIndex = 14;
+            this.checkBoxTerminosYcondiciones.TabIndex = 11;
             this.checkBoxTerminosYcondiciones.UseVisualStyleBackColor = false;
             // 
             // buttonCrearCuenta
@@ -195,12 +177,23 @@
             this.buttonCrearCuenta.Location = new System.Drawing.Point(501, 449);
             this.buttonCrearCuenta.Name = "buttonCrearCuenta";
             this.buttonCrearCuenta.Size = new System.Drawing.Size(333, 53);
-            this.buttonCrearCuenta.TabIndex = 15;
+            this.buttonCrearCuenta.TabIndex = 12;
             this.buttonCrearCuenta.UseVisualStyleBackColor = true;
+            this.buttonCrearCuenta.Click += new System.EventHandler(this.buttonCrearCuenta_Click);
+            // 
+            // textBoxAñoNac
+            // 
+            this.textBoxAñoNac.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxAñoNac.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAñoNac.Location = new System.Drawing.Point(281, 270);
+            this.textBoxAñoNac.Name = "textBoxAñoNac";
+            this.textBoxAñoNac.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAñoNac.TabIndex = 5;
             // 
             // comboBoxMesFechaNac
             // 
             this.comboBoxMesFechaNac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxMesFechaNac.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxMesFechaNac.FormattingEnabled = true;
             this.comboBoxMesFechaNac.Items.AddRange(new object[] {
             "Enero",
@@ -217,14 +210,65 @@
             "Diciembre"});
             this.comboBoxMesFechaNac.Location = new System.Drawing.Point(130, 267);
             this.comboBoxMesFechaNac.Name = "comboBoxMesFechaNac";
-            this.comboBoxMesFechaNac.Size = new System.Drawing.Size(131, 34);
-            this.comboBoxMesFechaNac.TabIndex = 16;
+            this.comboBoxMesFechaNac.Size = new System.Drawing.Size(131, 28);
+            this.comboBoxMesFechaNac.TabIndex = 4;
+            // 
+            // paisesTableAdapter
+            // 
+            this.paisesTableAdapter.ClearBeforeFill = true;
+            // 
+            // tipo_documentoTableAdapter
+            // 
+            this.tipo_documentoTableAdapter.ClearBeforeFill = true;
+            // 
+            // comBoxDiaNac
+            // 
+            this.comBoxDiaNac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comBoxDiaNac.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comBoxDiaNac.FormattingEnabled = true;
+            this.comBoxDiaNac.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.comBoxDiaNac.Location = new System.Drawing.Point(55, 267);
+            this.comBoxDiaNac.Name = "comBoxDiaNac";
+            this.comBoxDiaNac.Size = new System.Drawing.Size(56, 28);
+            this.comBoxDiaNac.TabIndex = 3;
             // 
             // datos_personales_CrearUsuario
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(918, 541);
+            this.Controls.Add(this.comBoxDiaNac);
             this.Controls.Add(this.comboBoxMesFechaNac);
             this.Controls.Add(this.buttonCrearCuenta);
             this.Controls.Add(this.checkBoxTerminosYcondiciones);
@@ -235,7 +279,6 @@
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBoxCodigoPais);
             this.Controls.Add(this.textBoxAñoNac);
-            this.Controls.Add(this.textBoxDiaNac);
             this.Controls.Add(this.textBoxNumeroTelefono);
             this.Controls.Add(this.textBoxApellido);
             this.Controls.Add(this.textBoxNombre);
@@ -243,8 +286,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "datos_personales_CrearUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "datos_personales_CrearUsuario";
+            this.Text = "z";
             this.Load += new System.EventHandler(this.datos_personales_CrearUsuario_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.paisesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.localidades)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipodocumentoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,8 +300,6 @@
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxApellido;
         private System.Windows.Forms.TextBox textBoxNumeroTelefono;
-        private System.Windows.Forms.TextBox textBoxDiaNac;
-        private System.Windows.Forms.TextBox textBoxAñoNac;
         private System.Windows.Forms.TextBox textBoxCodigoPais;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button1;
@@ -264,6 +308,13 @@
         private System.Windows.Forms.TextBox textBoxNumeroDocumento;
         private System.Windows.Forms.CheckBox checkBoxTerminosYcondiciones;
         private System.Windows.Forms.Button buttonCrearCuenta;
+        private System.Windows.Forms.TextBox textBoxAñoNac;
         private System.Windows.Forms.ComboBox comboBoxMesFechaNac;
+        private localidades localidades;
+        private System.Windows.Forms.BindingSource paisesBindingSource;
+        private localidadesTableAdapters.paisesTableAdapter paisesTableAdapter;
+        private System.Windows.Forms.BindingSource tipodocumentoBindingSource;
+        private localidadesTableAdapters.tipo_documentoTableAdapter tipo_documentoTableAdapter;
+        private System.Windows.Forms.ComboBox comBoxDiaNac;
     }
 }
