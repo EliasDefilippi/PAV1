@@ -117,10 +117,11 @@
             this.comboBoxPaisEmisionDocu.DataSource = this.paisesBindingSource;
             this.comboBoxPaisEmisionDocu.DisplayMember = "nombre_pais";
             this.comboBoxPaisEmisionDocu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxPaisEmisionDocu.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxPaisEmisionDocu.FormattingEnabled = true;
             this.comboBoxPaisEmisionDocu.Location = new System.Drawing.Point(501, 92);
             this.comboBoxPaisEmisionDocu.Name = "comboBoxPaisEmisionDocu";
-            this.comboBoxPaisEmisionDocu.Size = new System.Drawing.Size(324, 34);
+            this.comboBoxPaisEmisionDocu.Size = new System.Drawing.Size(324, 28);
             this.comboBoxPaisEmisionDocu.TabIndex = 8;
             this.comboBoxPaisEmisionDocu.ValueMember = "id_pais";
             // 
@@ -139,10 +140,11 @@
             this.comboBoxTipoDocumento.DataSource = this.tipodocumentoBindingSource;
             this.comboBoxTipoDocumento.DisplayMember = "desc_tipo_doc";
             this.comboBoxTipoDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxTipoDocumento.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxTipoDocumento.FormattingEnabled = true;
             this.comboBoxTipoDocumento.Location = new System.Drawing.Point(501, 181);
             this.comboBoxTipoDocumento.Name = "comboBoxTipoDocumento";
-            this.comboBoxTipoDocumento.Size = new System.Drawing.Size(324, 34);
+            this.comboBoxTipoDocumento.Size = new System.Drawing.Size(324, 28);
             this.comboBoxTipoDocumento.TabIndex = 9;
             this.comboBoxTipoDocumento.ValueMember = "id_tipo_documento";
             // 

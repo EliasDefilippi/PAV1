@@ -28,12 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrarAeropuerto));
             this.buttonConfirmarRegistroAeropuerto = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabelRegistrarLocalidad = new System.Windows.Forms.LinkLabel();
             this.textBoxNombreAeropuerto = new System.Windows.Forms.TextBox();
             this.comboBoxLocalidad = new System.Windows.Forms.ComboBox();
+            this.combox_localidad = new Menú_de_ejemplo.combox_localidad();
+            this.localidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.localidadesTableAdapter = new Menú_de_ejemplo.combox_localidadTableAdapters.localidadesTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.localidadesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonConfirmarRegistroAeropuerto
@@ -43,8 +49,9 @@
             this.buttonConfirmarRegistroAeropuerto.Location = new System.Drawing.Point(43, 271);
             this.buttonConfirmarRegistroAeropuerto.Name = "buttonConfirmarRegistroAeropuerto";
             this.buttonConfirmarRegistroAeropuerto.Size = new System.Drawing.Size(334, 55);
-            this.buttonConfirmarRegistroAeropuerto.TabIndex = 0;
+            this.buttonConfirmarRegistroAeropuerto.TabIndex = 3;
             this.buttonConfirmarRegistroAeropuerto.UseVisualStyleBackColor = true;
+            this.buttonConfirmarRegistroAeropuerto.Click += new System.EventHandler(this.buttonConfirmarRegistroAeropuerto_Click);
             // 
             // label1
             // 
@@ -78,17 +85,34 @@
             this.textBoxNombreAeropuerto.Location = new System.Drawing.Point(52, 101);
             this.textBoxNombreAeropuerto.Name = "textBoxNombreAeropuerto";
             this.textBoxNombreAeropuerto.Size = new System.Drawing.Size(325, 19);
-            this.textBoxNombreAeropuerto.TabIndex = 3;
+            this.textBoxNombreAeropuerto.TabIndex = 1;
             // 
             // comboBoxLocalidad
             // 
+            this.comboBoxLocalidad.DataSource = this.localidadesBindingSource;
+            this.comboBoxLocalidad.DisplayMember = "nombre_localidad";
             this.comboBoxLocalidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxLocalidad.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxLocalidad.FormattingEnabled = true;
             this.comboBoxLocalidad.Location = new System.Drawing.Point(52, 186);
             this.comboBoxLocalidad.Name = "comboBoxLocalidad";
             this.comboBoxLocalidad.Size = new System.Drawing.Size(325, 24);
-            this.comboBoxLocalidad.TabIndex = 4;
+            this.comboBoxLocalidad.TabIndex = 2;
+            this.comboBoxLocalidad.ValueMember = "id_localidad";
+            // 
+            // combox_localidad
+            // 
+            this.combox_localidad.DataSetName = "combox_localidad";
+            this.combox_localidad.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // localidadesBindingSource
+            // 
+            this.localidadesBindingSource.DataMember = "localidades";
+            this.localidadesBindingSource.DataSource = this.combox_localidad;
+            // 
+            // localidadesTableAdapter
+            // 
+            this.localidadesTableAdapter.ClearBeforeFill = true;
             // 
             // RegistrarAeropuerto
             // 
@@ -105,6 +129,9 @@
             this.Name = "RegistrarAeropuerto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistrarAeropuerto";
+            this.Load += new System.EventHandler(this.RegistrarAeropuerto_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.localidadesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,5 +144,8 @@
         private System.Windows.Forms.LinkLabel linkLabelRegistrarLocalidad;
         private System.Windows.Forms.TextBox textBoxNombreAeropuerto;
         private System.Windows.Forms.ComboBox comboBoxLocalidad;
+        private combox_localidad combox_localidad;
+        private System.Windows.Forms.BindingSource localidadesBindingSource;
+        private combox_localidadTableAdapters.localidadesTableAdapter localidadesTableAdapter;
     }
 }

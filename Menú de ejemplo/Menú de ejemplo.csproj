@@ -121,6 +121,11 @@
     <Compile Include="Formularios\SeleccionPais_CrearUsuario.Designer.cs">
       <DependentUpon>SeleccionPais_CrearUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="LAFAST_gestor_de_reservasDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAFAST_gestor_de_reservasDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="localidades.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
