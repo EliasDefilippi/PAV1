@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearVuelo));
             this.buttonConfirmarVuelo = new System.Windows.Forms.Button();
             this.buttonCancelarCreacionVuelo = new System.Windows.Forms.Button();
@@ -35,6 +36,11 @@
             this.dateTimeFechaVuelo = new System.Windows.Forms.DateTimePicker();
             this.comboBoxAvionVuelo = new System.Windows.Forms.ComboBox();
             this.comboBoxTarifaVuelo = new System.Windows.Forms.ComboBox();
+            this.combox_localidad = new Menú_de_ejemplo.combox_localidad();
+            this.tarifasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tarifasTableAdapter = new Menú_de_ejemplo.combox_localidadTableAdapters.tarifasTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tarifasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonConfirmarVuelo
@@ -46,6 +52,7 @@
             this.buttonConfirmarVuelo.Size = new System.Drawing.Size(334, 55);
             this.buttonConfirmarVuelo.TabIndex = 0;
             this.buttonConfirmarVuelo.UseVisualStyleBackColor = true;
+            this.buttonConfirmarVuelo.Click += new System.EventHandler(this.buttonConfirmarVuelo_Click);
             // 
             // buttonCancelarCreacionVuelo
             // 
@@ -88,6 +95,8 @@
             // 
             // comboBoxTarifaVuelo
             // 
+            this.comboBoxTarifaVuelo.DataSource = this.tarifasBindingSource;
+            this.comboBoxTarifaVuelo.DisplayMember = "clase_tarifa";
             this.comboBoxTarifaVuelo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxTarifaVuelo.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxTarifaVuelo.FormattingEnabled = true;
@@ -95,6 +104,21 @@
             this.comboBoxTarifaVuelo.Name = "comboBoxTarifaVuelo";
             this.comboBoxTarifaVuelo.Size = new System.Drawing.Size(320, 24);
             this.comboBoxTarifaVuelo.TabIndex = 5;
+            this.comboBoxTarifaVuelo.ValueMember = "id_tarifa";
+            // 
+            // combox_localidad
+            // 
+            this.combox_localidad.DataSetName = "combox_localidad";
+            this.combox_localidad.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tarifasBindingSource
+            // 
+            this.tarifasBindingSource.DataMember = "tarifas";
+            this.tarifasBindingSource.DataSource = this.combox_localidad;
+            // 
+            // tarifasTableAdapter
+            // 
+            this.tarifasTableAdapter.ClearBeforeFill = true;
             // 
             // CrearVuelo
             // 
@@ -113,6 +137,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CrearVuelo";
             this.Load += new System.EventHandler(this.CrearVuelo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tarifasBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,5 +152,8 @@
         private System.Windows.Forms.DateTimePicker dateTimeFechaVuelo;
         private System.Windows.Forms.ComboBox comboBoxAvionVuelo;
         private System.Windows.Forms.ComboBox comboBoxTarifaVuelo;
+        private combox_localidad combox_localidad;
+        private System.Windows.Forms.BindingSource tarifasBindingSource;
+        private combox_localidadTableAdapters.tarifasTableAdapter tarifasTableAdapter;
     }
 }
