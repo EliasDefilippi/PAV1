@@ -43,8 +43,6 @@ namespace Menú_de_ejemplo.Formularios
 
                 string insertLocalidad = string.Format("INSERT INTO [LAFAST_gestor_de_reservas].[dbo].[localidades] (nombre_localidad, id_pais) VALUES ('{0}' , {1} );", nombre, idPais);
 
-                MessageBox.Show(insertLocalidad);
-
                 Utilidades.Ejecutar(insertLocalidad);
 
                 MessageBox.Show("Se registro la localidad");

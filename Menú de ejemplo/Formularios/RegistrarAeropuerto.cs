@@ -43,8 +43,6 @@ namespace Menú_de_ejemplo.Formularios
 
                 string insertLocalidad = string.Format("INSERT INTO [LAFAST_gestor_de_reservas].[dbo].[aeropuertos] (nombre_aeropuerto, id_localidad_aeropuerto) VALUES ('{0}' , {1} );", nombre, idPais);
 
-                MessageBox.Show(insertLocalidad);
-
                 Utilidades.Ejecutar(insertLocalidad);
 
                 MessageBox.Show("Se registro nuevo aeropuerto");
