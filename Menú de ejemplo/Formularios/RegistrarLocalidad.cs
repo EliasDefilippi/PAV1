@@ -16,8 +16,6 @@ namespace Menú_de_ejemplo.Formularios
         public RegistrarLocalidad()
         {
             InitializeComponent();
-
-
         }
         private void buttonConfirmarLocalidad_Click(object sender, EventArgs e)
         {

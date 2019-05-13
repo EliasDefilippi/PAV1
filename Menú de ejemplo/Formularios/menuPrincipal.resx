@@ -300,6 +300,17 @@
         pX2U2/C69U7v8b7v9R7wdW68AXe03QS+b9l9AbLAlNpOrhwkAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="buttonCrearTarifa.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAKUAAAAyCAYAAAA9SBshAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxMAAAsTAQCanBgAAAEeSURBVHhe7d1LasMwGIVRbcD7
+        31QplL7fXUnTXyEGYQRpadrcwRmciSTQ5EN4YFvtYll2l+WqXJebclvuyv3Gw8HjwVN5Li/lrbyXD/il
+        1kPswW0je53o4Y16hKPZBvBTrYc4nnTHQpuNwSm1McbZAvhvbTYI5yRK4oiSOKIkjiiJI0riiJI4oiSO
+        KIkjSuKIkjiiJI4oiSNK4oiSOKLkL31Oxo4SJXFESZzmUwjSOCmJI0riiJI4oiSOKIkjSuKIkjiiJI4o
+        iSNK4oiSOKIkjiiJs39LaDYB5yJK4oiSOJ4piSNK4oiSOKIkjiiJI0riiJI4oiSOKIlzNMr1Dxqr2Ro4
+        pX2U2/C69U7v8b7v9R7wdW68AXe03QS+b9l9AbLAlNpOrhwkAAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
