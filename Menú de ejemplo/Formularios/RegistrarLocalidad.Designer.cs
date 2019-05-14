@@ -33,15 +33,15 @@
             this.buttonConfirmarLocalidad = new System.Windows.Forms.Button();
             this.textBoxNombreLocalidad = new System.Windows.Forms.TextBox();
             this.comboBoxPaises = new System.Windows.Forms.ComboBox();
+            this.paisesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.combox_localidad = new Menú_de_ejemplo.combox_localidad();
             this.aeropuertosDetinos = new Menú_de_ejemplo.aeropuertosDetinos();
             this.aeropuertosDetinosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.combox_localidad = new Menú_de_ejemplo.combox_localidad();
-            this.paisesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.paisesTableAdapter = new Menú_de_ejemplo.combox_localidadTableAdapters.paisesTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.paisesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aeropuertosDetinos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aeropuertosDetinosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paisesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonConfirmarLocalidad
@@ -76,6 +76,16 @@
             this.comboBoxPaises.TabIndex = 2;
             this.comboBoxPaises.ValueMember = "id_pais";
             // 
+            // paisesBindingSource
+            // 
+            this.paisesBindingSource.DataMember = "paises";
+            this.paisesBindingSource.DataSource = this.combox_localidad;
+            // 
+            // combox_localidad
+            // 
+            this.combox_localidad.DataSetName = "combox_localidad";
+            this.combox_localidad.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // aeropuertosDetinos
             // 
             this.aeropuertosDetinos.DataSetName = "aeropuertosDetinos";
@@ -86,16 +96,6 @@
             this.aeropuertosDetinosBindingSource.DataSource = this.aeropuertosDetinos;
             this.aeropuertosDetinosBindingSource.Position = 0;
             // 
-            // combox_localidad
-            // 
-            this.combox_localidad.DataSetName = "combox_localidad";
-            this.combox_localidad.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // paisesBindingSource
-            // 
-            this.paisesBindingSource.DataMember = "paises";
-            this.paisesBindingSource.DataSource = this.combox_localidad;
-            // 
             // paisesTableAdapter
             // 
             this.paisesTableAdapter.ClearBeforeFill = true;
@@ -105,7 +105,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(428, 338);
+            this.ClientSize = new System.Drawing.Size(428, 325);
             this.Controls.Add(this.comboBoxPaises);
             this.Controls.Add(this.textBoxNombreLocalidad);
             this.Controls.Add(this.buttonConfirmarLocalidad);
@@ -114,10 +114,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistrarLocalidad";
             this.Load += new System.EventHandler(this.RegistrarLocalidad_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.paisesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aeropuertosDetinos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aeropuertosDetinosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paisesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

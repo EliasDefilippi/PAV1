@@ -28,26 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearTarifa));
             this.comboBoxClaseTarifa = new System.Windows.Forms.ComboBox();
             this.textBoxPrecioTarifa = new System.Windows.Forms.TextBox();
             this.textBoxImpuestoTarifa = new System.Windows.Forms.TextBox();
             this.buttonConfirmarTarifa = new System.Windows.Forms.Button();
             this.buttonCancelarTarifa = new System.Windows.Forms.Button();
+            this.combox_localidad = new Menú_de_ejemplo.combox_localidad();
+            this.tarifasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tarifasTableAdapter = new Menú_de_ejemplo.combox_localidadTableAdapters.tarifasTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tarifasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxClaseTarifa
             // 
+            this.comboBoxClaseTarifa.DataSource = this.tarifasBindingSource;
+            this.comboBoxClaseTarifa.DisplayMember = "clase_tarifa";
             this.comboBoxClaseTarifa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxClaseTarifa.FormattingEnabled = true;
-            this.comboBoxClaseTarifa.Items.AddRange(new object[] {
-            "T",
-            "E",
-            "F"});
             this.comboBoxClaseTarifa.Location = new System.Drawing.Point(51, 98);
             this.comboBoxClaseTarifa.Name = "comboBoxClaseTarifa";
             this.comboBoxClaseTarifa.Size = new System.Drawing.Size(325, 24);
             this.comboBoxClaseTarifa.TabIndex = 0;
+            this.comboBoxClaseTarifa.ValueMember = "id_tarifa";
             // 
             // textBoxPrecioTarifa
             // 
@@ -74,6 +79,7 @@
             this.buttonConfirmarTarifa.Size = new System.Drawing.Size(334, 55);
             this.buttonConfirmarTarifa.TabIndex = 3;
             this.buttonConfirmarTarifa.UseVisualStyleBackColor = true;
+            this.buttonConfirmarTarifa.Click += new System.EventHandler(this.buttonConfirmarTarifa_Click);
             // 
             // buttonCancelarTarifa
             // 
@@ -85,6 +91,20 @@
             this.buttonCancelarTarifa.TabIndex = 4;
             this.buttonCancelarTarifa.UseVisualStyleBackColor = true;
             this.buttonCancelarTarifa.Click += new System.EventHandler(this.buttonCancelarTarifa_Click);
+            // 
+            // combox_localidad
+            // 
+            this.combox_localidad.DataSetName = "combox_localidad";
+            this.combox_localidad.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tarifasBindingSource
+            // 
+            this.tarifasBindingSource.DataMember = "tarifas";
+            this.tarifasBindingSource.DataSource = this.combox_localidad;
+            // 
+            // tarifasTableAdapter
+            // 
+            this.tarifasTableAdapter.ClearBeforeFill = true;
             // 
             // CrearTarifa
             // 
@@ -99,10 +119,13 @@
             this.Controls.Add(this.comboBoxClaseTarifa);
             this.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CrearTarifa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CrearTarifa";
+            this.Load += new System.EventHandler(this.CrearTarifa_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tarifasBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,5 +138,8 @@
         private System.Windows.Forms.TextBox textBoxImpuestoTarifa;
         private System.Windows.Forms.Button buttonConfirmarTarifa;
         private System.Windows.Forms.Button buttonCancelarTarifa;
+        private combox_localidad combox_localidad;
+        private System.Windows.Forms.BindingSource tarifasBindingSource;
+        private combox_localidadTableAdapters.tarifasTableAdapter tarifasTableAdapter;
     }
 }
