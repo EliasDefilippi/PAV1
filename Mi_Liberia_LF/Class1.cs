@@ -68,5 +68,17 @@ namespace Mi_Liberia_LF
             return HayErrores;
         }
 
+
+        public static DataSet LlenarDataGV(string tabla)
+        {
+            DataSet DS;
+
+            string cmd = string.Format("SELECT * FROM " + tabla);
+            DS = Ejecutar(cmd);
+
+            return DS;
+        }
+
+
     }
 }
