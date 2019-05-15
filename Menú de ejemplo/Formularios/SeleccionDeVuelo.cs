@@ -22,7 +22,12 @@ namespace Menú_de_ejemplo.Formularios
         private void SeleccionDeVuelo_Load(object sender, EventArgs e)
         {
 
-            dataGridView1.DataSource = Utilidades.LlenarDataGV("vuelos").Tables[0];
+             DataSet ds;
+
+            string cmd = string.Format("select nro_vuelo, id_avion, fecha_salida_vuelo FROM [LAFAST_gestor_de_reservas].[dbo].[vuelos]; ");
+            ds = Utilidades.Ejecutar(cmd);
+
+            dataGridView1.DataSource = ds.Tables[0];
         }
 
 
@@ -33,7 +38,7 @@ namespace Menú_de_ejemplo.Formularios
                 try
                 {
                     DataSet ds;
-                    string cmd = "select * FROM vuelos WHERE id_avion LIKE ('%" + textBox1.Text.Trim() + "%')";
+                    string cmd = "select nro_vuelo,id_avion,fecha_salida_vuelo FROM vuelos WHERE id_avion LIKE ('%" + textBox1.Text.Trim() + "%')";
 
                     ds = Utilidades.Ejecutar(cmd);
 
@@ -48,5 +53,9 @@ namespace Menú_de_ejemplo.Formularios
             }
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

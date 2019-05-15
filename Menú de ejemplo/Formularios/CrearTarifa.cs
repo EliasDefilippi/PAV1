@@ -43,7 +43,6 @@ namespace Menú_de_ejemplo.Formularios
             try
             {
                 string insertarTarifa = string.Format("INSERT INTO [LAFAST_gestor_de_reservas].[dbo].[tarifas] (clase_tarifa, precio_tarifa, impuesto_tarifa) VALUES ('{0}', {1}, {2});", claseTarifa, precioTarifa, impuestoTarifa);
-                MessageBox.Show(insertarTarifa);
                 Utilidades.Ejecutar(insertarTarifa);
                 MessageBox.Show("Se registro una nueva tarifa exitosamente.");
                 this.Close();

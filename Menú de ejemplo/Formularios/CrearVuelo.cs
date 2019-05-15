@@ -72,7 +72,7 @@ namespace Menú_de_ejemplo.Formularios
 
                 string insertVuelo = string.Format("INSERT INTO [LAFAST_gestor_de_reservas].[dbo].[vuelos] (nro_vuelo ,id_avion, fecha_salida_vuelo , id_tarifa_vuelo) VALUES (  {0} ,{1} , '{2}' , {3} );", id_vuelo, id_avion , fecha_salida_vuelo.ToString("yyyy-MM-dd"), id_tarifa_vuelo);
 
-                
+                Utilidades.Ejecutar(insertVuelo);
 
                 MessageBox.Show("Se registro el vuelo número: " + id_vuelo);
 
