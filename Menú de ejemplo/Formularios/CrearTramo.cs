@@ -19,7 +19,18 @@ namespace Menú_de_ejemplo.Formularios
 
         private void buttonAsignarVuelo_Click(object sender, EventArgs e)
         {
+
+            int id_aeropuerto_destino = int.Parse(comboBoxAeropuertoDestino.SelectedValue.ToString());
+            int id_aeropuerto_origen = int.Parse(comboBoxAeropuertoOrigen.SelectedValue.ToString());
+            int duracion = int.Parse(textBoxDuracionTramo.Text);
+            int distancia = int.Parse(tbx_distancia.Text);
+
             Formularios.SeleccionDeVuelo vueloElegido = new Formularios.SeleccionDeVuelo();
+            vueloElegido.propertyId_aeropuerto_destino = id_aeropuerto_destino;
+            vueloElegido.propertyId_aeropuerto_origen = id_aeropuerto_origen;
+            vueloElegido.propertyDuracion = duracion;
+            vueloElegido.propertyDistancia = distancia;
+
             this.Close();
             vueloElegido.Show();
         }

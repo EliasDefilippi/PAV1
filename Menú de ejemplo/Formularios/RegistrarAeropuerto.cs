@@ -22,6 +22,7 @@ namespace Menú_de_ejemplo.Formularios
         {
             Formularios.RegistrarLocalidad newCity = new Formularios.RegistrarLocalidad();
             newCity.Show();
+            this.Close();
            
         }
 

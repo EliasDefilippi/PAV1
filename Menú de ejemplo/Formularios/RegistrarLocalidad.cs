@@ -46,6 +46,8 @@ namespace Menú_de_ejemplo.Formularios
                 MessageBox.Show("Se registro la localidad");
 
                 this.Close();
+                Formularios.RegistrarAeropuerto newCity = new Formularios.RegistrarAeropuerto();
+                newCity.Show();
             }
             catch (Exception)
             {
