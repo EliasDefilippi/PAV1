@@ -63,6 +63,26 @@ namespace Mi_Liberia_LF
                             ErrorProvider.SetError(obj, "Se aceptan solo numeros.");
                         }
                     }
+
+                    if(obj.SoloCaracteres == true)
+                    {
+                        int cont = 0, numerosEncontrados = 0;
+
+                        foreach(char numero in obj.Text.Trim())
+                        {
+                            if(char.IsNumber(obj.Text.Trim(), cont))
+                            {
+                                numerosEncontrados++;
+                            }
+                            cont++;
+                        }
+                        if(numerosEncontrados != 0)
+                        {
+                            HayErrores = true;
+                            ErrorProvider.SetError(obj, "Se aceptn solo letras.");
+                        }
+                    }
+
                 }
             }
             return HayErrores;

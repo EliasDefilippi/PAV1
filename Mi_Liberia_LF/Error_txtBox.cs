@@ -29,5 +29,11 @@ namespace Mi_Liberia_LF
             get;
         }
 
+        public Boolean SoloCaracteres
+        {
+            set;
+            get;
+        }
+
     }
 }

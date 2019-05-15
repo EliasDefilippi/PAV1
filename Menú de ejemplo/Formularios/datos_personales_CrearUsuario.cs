@@ -44,72 +44,75 @@ namespace Menú_de_ejemplo.Formularios
 
         private void buttonCrearCuenta_Click(object sender, EventArgs e)
         {
-
-
-            if (checkBoxTerminosYcondiciones.Checked) { 
-
-            String mes = "";
-            switch (comboBoxMesFechaNac.Text)
+            if (Utilidades.ValidarFormulario(this, errorProvider1) == false)
             {
-                case "Enero":
-                    mes = "01";
-                break;
-                case "Febrero":
-                     mes = "02";
-                    break;
-                case "Marzo":
-                     mes = "03";
-                    break;
-                case "Abril":
-                     mes = "04";
-                    break;
-                case "Mayo":
-                    mes = "05";
-                    break;
-                case "Junio":
-                    mes = "06";
-                    break;
-                case "Julio":
-                    mes = "07";
-                    break;
-                case "Agosto":
-                    mes = "08";
-                    break;
-                case "Septiembre":
-                    mes = "09";
-                    break;
-                case "Octubre":
-                    mes = "10";
-                    break;
-                case "Noviembre":
-                    mes = "11";
-                    break;
-                case "Diciembre":
-                    mes = "12";
-                    break;
 
-            }
-
-
-            //año-mes-dia
-            String nombre = textBoxNombre.Text;
-            String apellido = textBoxApellido.Text;
-
-
-
-            if (textBoxNumeroDocumento.Text != "")
+                if (checkBoxTerminosYcondiciones.Checked)
             {
-                int dni = int.Parse(textBoxNumeroDocumento.Text.Replace(".", ""));
-                String fecha = textBoxAñoNac.Text + "/" + mes + "/" + comBoxDiaNac.Text;
-                String telefono = textBoxCodigoPais.Text + "-" + textBoxNumeroTelefono.Text;
-                int pais = int.Parse(comboBoxPaisEmisionDocu.SelectedValue.ToString());
-                int tipoDoc = int.Parse(comboBoxTipoDocumento.SelectedValue.ToString());
-                insertarDatosPersonales(nombre, apellido, dni, fecha, telefono, pais, tipoDoc);
 
-            }
-            else {
-                MessageBox.Show("Ingrese DNI");
-            }
+                String mes = "";
+                switch (comboBoxMesFechaNac.Text)
+                {
+                    case "Enero":
+                        mes = "01";
+                        break;
+                    case "Febrero":
+                        mes = "02";
+                        break;
+                    case "Marzo":
+                        mes = "03";
+                        break;
+                    case "Abril":
+                        mes = "04";
+                        break;
+                    case "Mayo":
+                        mes = "05";
+                        break;
+                    case "Junio":
+                        mes = "06";
+                        break;
+                    case "Julio":
+                        mes = "07";
+                        break;
+                    case "Agosto":
+                        mes = "08";
+                        break;
+                    case "Septiembre":
+                        mes = "09";
+                        break;
+                    case "Octubre":
+                        mes = "10";
+                        break;
+                    case "Noviembre":
+                        mes = "11";
+                        break;
+                    case "Diciembre":
+                        mes = "12";
+                        break;
+
+                }
+
+
+                //año-mes-dia
+                String nombre = textBoxNombre.Text;
+                String apellido = textBoxApellido.Text;
+
+
+
+                if (textBoxNumeroDocumento.Text != "")
+                {
+                    int dni = int.Parse(textBoxNumeroDocumento.Text.Replace(".", ""));
+                    String fecha = textBoxAñoNac.Text + "/" + mes + "/" + comBoxDiaNac.Text;
+                    String telefono = textBoxCodigoPais.Text + "-" + textBoxNumeroTelefono.Text;
+                    int pais = int.Parse(comboBoxPaisEmisionDocu.SelectedValue.ToString());
+                    int tipoDoc = int.Parse(comboBoxTipoDocumento.SelectedValue.ToString());
+                    insertarDatosPersonales(nombre, apellido, dni, fecha, telefono, pais, tipoDoc);
+
+                }
+                else
+                {
+                    MessageBox.Show("Ingrese DNI");
+                }
 
             }
             else
@@ -117,7 +120,7 @@ namespace Menú_de_ejemplo.Formularios
                 MessageBox.Show("Debe aceptar los terminos y condiciones establecidos por la Empresa");
 
             }
-
+         }
         }
 
         // Forma de generar set y get ctrol k x luego la opcion prop
