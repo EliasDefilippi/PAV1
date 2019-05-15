@@ -27,7 +27,7 @@ namespace Menú_de_ejemplo.Formularios
 
         private void buttonConfirmarElimAero_Click(object sender, EventArgs e)
         {
-            string aeropuerto = comboBoxElimAero.Text;
+            string aeropuerto = comboBoxElimAero.Text.Trim();
             deleteAirport(aeropuerto);
         }
 
@@ -35,15 +35,16 @@ namespace Menú_de_ejemplo.Formularios
         {
             try
             {
-                string eliminarAeropuerto = string.Format("DELETE FROM [LAFAST_gestor_de_reservas].[dbo].[aeropuertos] WHERE nombre_aeropuerto = '@aeropuerto');");
+                string eliminarAeropuerto = string.Format("EXEC EliminarAeropuerto '{0}'", aeropuerto);
                 MessageBox.Show(eliminarAeropuerto);
                 Utilidades.Ejecutar(eliminarAeropuerto);
                 MessageBox.Show("Se eliminó el aeropuerto seleccionado exitosamente.");
                 this.Close();
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 MessageBox.Show("Error al eliminar el aeropuerto seleccionado. Intente nuevamente más tarde.");
+                MessageBox.Show(e.Message);
             }
         }
 

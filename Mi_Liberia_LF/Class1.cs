@@ -14,6 +14,7 @@ namespace Mi_Liberia_LF
 
         public static DataSet Ejecutar(string cmd)
         {
+
             SqlConnection conexion = new SqlConnection("Data Source=.;Initial Catalog=LAFAST_gestor_de_reservas;Integrated Security=True");
             conexion.Open();
 
@@ -36,7 +37,6 @@ namespace Mi_Liberia_LF
                 if (item is Error_txtBox)
                 {
                     Error_txtBox obj = (Error_txtBox)item;
-
                     if (obj.Validar == true)
                     {
                         if (string.IsNullOrEmpty(obj.Text.Trim()))
@@ -48,7 +48,6 @@ namespace Mi_Liberia_LF
                     if (obj.SoloNumeros == true)
                     {
                         int cont = 0, letrasEnconradas = 0;
-
                         foreach (char letra in obj.Text.Trim())
                         {
                             if (char.IsLetter(obj.Text.Trim(), cont))
