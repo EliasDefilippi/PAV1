@@ -43,6 +43,7 @@
             this.buttonRegistrarAeropuerto = new System.Windows.Forms.Button();
             this.buttonCrearVuelo = new System.Windows.Forms.Button();
             this.buttonCrearTarifa = new System.Windows.Forms.Button();
+            this.buttonEliminarAeropuerto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -220,12 +221,26 @@
             this.buttonCrearTarifa.UseVisualStyleBackColor = true;
             this.buttonCrearTarifa.Click += new System.EventHandler(this.buttonCrearTarifa_Click);
             // 
+            // buttonEliminarAeropuerto
+            // 
+            this.buttonEliminarAeropuerto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonEliminarAeropuerto.BackgroundImage")));
+            this.buttonEliminarAeropuerto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEliminarAeropuerto.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEliminarAeropuerto.Location = new System.Drawing.Point(36, 597);
+            this.buttonEliminarAeropuerto.Name = "buttonEliminarAeropuerto";
+            this.buttonEliminarAeropuerto.Size = new System.Drawing.Size(165, 50);
+            this.buttonEliminarAeropuerto.TabIndex = 15;
+            this.buttonEliminarAeropuerto.Text = "Eliminar Aeropuerto";
+            this.buttonEliminarAeropuerto.UseVisualStyleBackColor = true;
+            this.buttonEliminarAeropuerto.Click += new System.EventHandler(this.buttonEliminarAeropuerto_Click);
+            // 
             // menuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1368, 788);
+            this.Controls.Add(this.buttonEliminarAeropuerto);
             this.Controls.Add(this.buttonCrearTarifa);
             this.Controls.Add(this.buttonCrearVuelo);
             this.Controls.Add(this.buttonRegistrarAeropuerto);
@@ -265,6 +280,7 @@
         private System.Windows.Forms.Button buttonRegistrarAeropuerto;
         private System.Windows.Forms.Button buttonCrearVuelo;
         private System.Windows.Forms.Button buttonCrearTarifa;
+        private System.Windows.Forms.Button buttonEliminarAeropuerto;
     }
 }
 

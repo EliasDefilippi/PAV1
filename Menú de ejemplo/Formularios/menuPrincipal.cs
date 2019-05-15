@@ -47,12 +47,12 @@ namespace Menú_de_ejemplo
 
         private void botonMaximizarInicio_Click(object sender, EventArgs e)
         {
-            
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void botonMinimizarInicio_Click(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void buttonInscribete_Click(object sender, EventArgs e)
@@ -83,6 +83,12 @@ namespace Menú_de_ejemplo
         {
             Formularios.CrearTarifa newTarifa = new Formularios.CrearTarifa();
             newTarifa.Show();
+        }
+
+        private void buttonEliminarAeropuerto_Click(object sender, EventArgs e)
+        {
+            Formularios.EliminarAeropuerto chauAeropuerto = new Formularios.EliminarAeropuerto();
+            chauAeropuerto.Show();
         }
     }
 }

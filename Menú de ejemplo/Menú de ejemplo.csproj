@@ -97,6 +97,12 @@
     <Compile Include="Formularios\datos_personales_CrearUsuario.Designer.cs">
       <DependentUpon>datos_personales_CrearUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\EliminarAeropuerto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EliminarAeropuerto.Designer.cs">
+      <DependentUpon>EliminarAeropuerto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\datos_personales_CrearUsuario.resx">
       <DependentUpon>datos_personales_CrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EliminarAeropuerto.resx">
+      <DependentUpon>EliminarAeropuerto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistrarAeropuerto.resx">
       <DependentUpon>RegistrarAeropuerto.cs</DependentUpon>
