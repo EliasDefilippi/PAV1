@@ -30,10 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(datos_personales_CrearUsuario));
-            this.textBoxNombre = new System.Windows.Forms.TextBox();
-            this.textBoxApellido = new System.Windows.Forms.TextBox();
-            this.textBoxNumeroTelefono = new System.Windows.Forms.TextBox();
-            this.textBoxCodigoPais = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBoxPaisEmisionDocu = new System.Windows.Forms.ComboBox();
@@ -41,69 +37,38 @@
             this.localidades = new Menú_de_ejemplo.localidades();
             this.comboBoxTipoDocumento = new System.Windows.Forms.ComboBox();
             this.tipodocumentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.textBoxNumeroDocumento = new System.Windows.Forms.TextBox();
             this.checkBoxTerminosYcondiciones = new System.Windows.Forms.CheckBox();
             this.buttonCrearCuenta = new System.Windows.Forms.Button();
-            this.textBoxAñoNac = new System.Windows.Forms.TextBox();
             this.comboBoxMesFechaNac = new System.Windows.Forms.ComboBox();
             this.paisesTableAdapter = new Menú_de_ejemplo.localidadesTableAdapters.paisesTableAdapter();
             this.tipo_documentoTableAdapter = new Menú_de_ejemplo.localidadesTableAdapters.tipo_documentoTableAdapter();
             this.comBoxDiaNac = new System.Windows.Forms.ComboBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.textBoxNombre = new Mi_Liberia_LF.Error_txtBox();
+            this.textBoxApellido = new Mi_Liberia_LF.Error_txtBox();
+            this.textBoxAñoNac = new Mi_Liberia_LF.Error_txtBox();
+            this.textBoxNumeroTelefono = new Mi_Liberia_LF.Error_txtBox();
+            this.textBoxCodigoPais = new Mi_Liberia_LF.Error_txtBox();
+            this.textBoxNumeroDocumento = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.paisesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.localidades)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipodocumentoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // textBoxNombre
-            // 
-            this.textBoxNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxNombre.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombre.Location = new System.Drawing.Point(55, 95);
-            this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(326, 26);
-            this.textBoxNombre.TabIndex = 1;
-            // 
-            // textBoxApellido
-            // 
-            this.textBoxApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxApellido.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxApellido.Location = new System.Drawing.Point(55, 184);
-            this.textBoxApellido.Name = "textBoxApellido";
-            this.textBoxApellido.Size = new System.Drawing.Size(326, 26);
-            this.textBoxApellido.TabIndex = 2;
-            // 
-            // textBoxNumeroTelefono
-            // 
-            this.textBoxNumeroTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxNumeroTelefono.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNumeroTelefono.Location = new System.Drawing.Point(130, 407);
-            this.textBoxNumeroTelefono.Name = "textBoxNumeroTelefono";
-            this.textBoxNumeroTelefono.Size = new System.Drawing.Size(251, 26);
-            this.textBoxNumeroTelefono.TabIndex = 7;
-            this.textBoxNumeroTelefono.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // textBoxCodigoPais
-            // 
-            this.textBoxCodigoPais.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxCodigoPais.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCodigoPais.Location = new System.Drawing.Point(55, 407);
-            this.textBoxCodigoPais.Name = "textBoxCodigoPais";
-            this.textBoxCodigoPais.Size = new System.Drawing.Size(56, 26);
-            this.textBoxCodigoPais.TabIndex = 6;
             // 
             // textBox6
             // 
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Location = new System.Drawing.Point(47, 588);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(260, 26);
+            this.textBox6.Size = new System.Drawing.Size(260, 24);
             this.textBox6.TabIndex = 7;
             // 
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(47, 618);
             this.button1.Name = "button1";
@@ -117,7 +82,7 @@
             this.comboBoxPaisEmisionDocu.DataSource = this.paisesBindingSource;
             this.comboBoxPaisEmisionDocu.DisplayMember = "nombre_pais";
             this.comboBoxPaisEmisionDocu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxPaisEmisionDocu.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxPaisEmisionDocu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxPaisEmisionDocu.FormattingEnabled = true;
             this.comboBoxPaisEmisionDocu.Location = new System.Drawing.Point(501, 92);
             this.comboBoxPaisEmisionDocu.Name = "comboBoxPaisEmisionDocu";
@@ -140,7 +105,7 @@
             this.comboBoxTipoDocumento.DataSource = this.tipodocumentoBindingSource;
             this.comboBoxTipoDocumento.DisplayMember = "desc_tipo_doc";
             this.comboBoxTipoDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxTipoDocumento.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxTipoDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxTipoDocumento.FormattingEnabled = true;
             this.comboBoxTipoDocumento.Location = new System.Drawing.Point(501, 181);
             this.comboBoxTipoDocumento.Name = "comboBoxTipoDocumento";
@@ -152,14 +117,6 @@
             // 
             this.tipodocumentoBindingSource.DataMember = "tipo_documento";
             this.tipodocumentoBindingSource.DataSource = this.localidades;
-            // 
-            // textBoxNumeroDocumento
-            // 
-            this.textBoxNumeroDocumento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxNumeroDocumento.Location = new System.Drawing.Point(501, 270);
-            this.textBoxNumeroDocumento.Name = "textBoxNumeroDocumento";
-            this.textBoxNumeroDocumento.Size = new System.Drawing.Size(324, 26);
-            this.textBoxNumeroDocumento.TabIndex = 10;
             // 
             // checkBoxTerminosYcondiciones
             // 
@@ -183,19 +140,10 @@
             this.buttonCrearCuenta.UseVisualStyleBackColor = true;
             this.buttonCrearCuenta.Click += new System.EventHandler(this.buttonCrearCuenta_Click);
             // 
-            // textBoxAñoNac
-            // 
-            this.textBoxAñoNac.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxAñoNac.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAñoNac.Location = new System.Drawing.Point(281, 270);
-            this.textBoxAñoNac.Name = "textBoxAñoNac";
-            this.textBoxAñoNac.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAñoNac.TabIndex = 5;
-            // 
             // comboBoxMesFechaNac
             // 
             this.comboBoxMesFechaNac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxMesFechaNac.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxMesFechaNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxMesFechaNac.FormattingEnabled = true;
             this.comboBoxMesFechaNac.Items.AddRange(new object[] {
             "Enero",
@@ -226,7 +174,7 @@
             // comBoxDiaNac
             // 
             this.comBoxDiaNac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comBoxDiaNac.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comBoxDiaNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comBoxDiaNac.FormattingEnabled = true;
             this.comBoxDiaNac.Items.AddRange(new object[] {
             "01",
@@ -265,26 +213,87 @@
             this.comBoxDiaNac.Size = new System.Drawing.Size(56, 28);
             this.comBoxDiaNac.TabIndex = 3;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // textBoxNombre
+            // 
+            this.textBoxNombre.Location = new System.Drawing.Point(55, 92);
+            this.textBoxNombre.Name = "textBoxNombre";
+            this.textBoxNombre.Size = new System.Drawing.Size(326, 31);
+            this.textBoxNombre.SoloCaracteres = true;
+            this.textBoxNombre.SoloNumeros = false;
+            this.textBoxNombre.TabIndex = 13;
+            this.textBoxNombre.Validar = true;
+            // 
+            // textBoxApellido
+            // 
+            this.textBoxApellido.Location = new System.Drawing.Point(55, 181);
+            this.textBoxApellido.Name = "textBoxApellido";
+            this.textBoxApellido.Size = new System.Drawing.Size(326, 31);
+            this.textBoxApellido.SoloCaracteres = true;
+            this.textBoxApellido.SoloNumeros = false;
+            this.textBoxApellido.TabIndex = 14;
+            this.textBoxApellido.Validar = true;
+            // 
+            // textBoxAñoNac
+            // 
+            this.textBoxAñoNac.Location = new System.Drawing.Point(278, 267);
+            this.textBoxAñoNac.Name = "textBoxAñoNac";
+            this.textBoxAñoNac.Size = new System.Drawing.Size(103, 31);
+            this.textBoxAñoNac.SoloCaracteres = false;
+            this.textBoxAñoNac.SoloNumeros = true;
+            this.textBoxAñoNac.TabIndex = 15;
+            this.textBoxAñoNac.Validar = true;
+            // 
+            // textBoxNumeroTelefono
+            // 
+            this.textBoxNumeroTelefono.Location = new System.Drawing.Point(130, 404);
+            this.textBoxNumeroTelefono.Name = "textBoxNumeroTelefono";
+            this.textBoxNumeroTelefono.Size = new System.Drawing.Size(251, 31);
+            this.textBoxNumeroTelefono.SoloCaracteres = false;
+            this.textBoxNumeroTelefono.SoloNumeros = true;
+            this.textBoxNumeroTelefono.TabIndex = 17;
+            this.textBoxNumeroTelefono.Validar = true;
+            // 
+            // textBoxCodigoPais
+            // 
+            this.textBoxCodigoPais.Location = new System.Drawing.Point(55, 404);
+            this.textBoxCodigoPais.Name = "textBoxCodigoPais";
+            this.textBoxCodigoPais.Size = new System.Drawing.Size(56, 31);
+            this.textBoxCodigoPais.SoloCaracteres = false;
+            this.textBoxCodigoPais.SoloNumeros = true;
+            this.textBoxCodigoPais.TabIndex = 18;
+            this.textBoxCodigoPais.Validar = true;
+            // 
+            // textBoxNumeroDocumento
+            // 
+            this.textBoxNumeroDocumento.Location = new System.Drawing.Point(501, 267);
+            this.textBoxNumeroDocumento.Name = "textBoxNumeroDocumento";
+            this.textBoxNumeroDocumento.Size = new System.Drawing.Size(324, 31);
+            this.textBoxNumeroDocumento.TabIndex = 21;
+            // 
             // datos_personales_CrearUsuario
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(918, 541);
+            this.Controls.Add(this.textBoxNumeroDocumento);
+            this.Controls.Add(this.textBoxCodigoPais);
+            this.Controls.Add(this.textBoxNumeroTelefono);
+            this.Controls.Add(this.textBoxAñoNac);
+            this.Controls.Add(this.textBoxApellido);
+            this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.comBoxDiaNac);
             this.Controls.Add(this.comboBoxMesFechaNac);
             this.Controls.Add(this.buttonCrearCuenta);
             this.Controls.Add(this.checkBoxTerminosYcondiciones);
-            this.Controls.Add(this.textBoxNumeroDocumento);
             this.Controls.Add(this.comboBoxTipoDocumento);
             this.Controls.Add(this.comboBoxPaisEmisionDocu);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBoxCodigoPais);
-            this.Controls.Add(this.textBoxAñoNac);
-            this.Controls.Add(this.textBoxNumeroTelefono);
-            this.Controls.Add(this.textBoxApellido);
-            this.Controls.Add(this.textBoxNombre);
-            this.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "datos_personales_CrearUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -293,24 +302,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.paisesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.localidades)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipodocumentoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBoxNombre;
-        private System.Windows.Forms.TextBox textBoxApellido;
-        private System.Windows.Forms.TextBox textBoxNumeroTelefono;
-        private System.Windows.Forms.TextBox textBoxCodigoPais;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBoxPaisEmisionDocu;
         private System.Windows.Forms.ComboBox comboBoxTipoDocumento;
-        private System.Windows.Forms.TextBox textBoxNumeroDocumento;
         private System.Windows.Forms.CheckBox checkBoxTerminosYcondiciones;
         private System.Windows.Forms.Button buttonCrearCuenta;
-        private System.Windows.Forms.TextBox textBoxAñoNac;
         private System.Windows.Forms.ComboBox comboBoxMesFechaNac;
         private localidades localidades;
         private System.Windows.Forms.BindingSource paisesBindingSource;
@@ -318,5 +322,12 @@
         private System.Windows.Forms.BindingSource tipodocumentoBindingSource;
         private localidadesTableAdapters.tipo_documentoTableAdapter tipo_documentoTableAdapter;
         private System.Windows.Forms.ComboBox comBoxDiaNac;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Mi_Liberia_LF.Error_txtBox textBoxCodigoPais;
+        private Mi_Liberia_LF.Error_txtBox textBoxNumeroTelefono;
+        private Mi_Liberia_LF.Error_txtBox textBoxAñoNac;
+        private Mi_Liberia_LF.Error_txtBox textBoxApellido;
+        private Mi_Liberia_LF.Error_txtBox textBoxNombre;
+        private System.Windows.Forms.TextBox textBoxNumeroDocumento;
     }
 }
