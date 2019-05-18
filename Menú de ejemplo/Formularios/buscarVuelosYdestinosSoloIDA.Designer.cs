@@ -47,6 +47,7 @@
             this.buttonBuscaTuVuelo.Size = new System.Drawing.Size(318, 52);
             this.buttonBuscaTuVuelo.TabIndex = 0;
             this.buttonBuscaTuVuelo.UseVisualStyleBackColor = true;
+            this.buttonBuscaTuVuelo.Click += new System.EventHandler(this.buttonBuscaTuVuelo_Click);
             // 
             // buttonCancelar
             // 
@@ -116,7 +117,7 @@
             this.Controls.Add(this.buttonBuscaTuVuelo);
             this.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "buscarVuelosYdestinosSoloIDA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);

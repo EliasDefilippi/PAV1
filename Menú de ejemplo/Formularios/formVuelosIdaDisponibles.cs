@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Menú_de_ejemplo.Formularios
 {
-    public partial class buscarVuelosYdestinosSoloIDA : Form
+    public partial class formVuelosIdaDisponibles : Form
     {
-        public buscarVuelosYdestinosSoloIDA()
+        public formVuelosIdaDisponibles()
         {
             InitializeComponent();
         }
@@ -20,13 +20,6 @@ namespace Menú_de_ejemplo.Formularios
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void buttonBuscaTuVuelo_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Formularios.formVuelosIdaDisponibles vueloDispo = new Formularios.formVuelosIdaDisponibles();
-            vueloDispo.Show();
         }
     }
 }

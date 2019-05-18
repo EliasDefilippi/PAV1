@@ -76,6 +76,7 @@
             this.botonBuscarVuelos.Size = new System.Drawing.Size(294, 52);
             this.botonBuscarVuelos.TabIndex = 9;
             this.botonBuscarVuelos.UseVisualStyleBackColor = true;
+            this.botonBuscarVuelos.Click += new System.EventHandler(this.botonBuscarVuelos_Click);
             // 
             // checkBoxIdaYvuelta
             // 
