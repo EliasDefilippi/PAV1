@@ -37,14 +37,16 @@
             this.buttonCrearTramo = new System.Windows.Forms.Button();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.botonCerrarInicio = new System.Windows.Forms.Button();
-            this.botonMaximizarInicio = new System.Windows.Forms.Button();
             this.botonMinimizarInicio = new System.Windows.Forms.Button();
             this.buttonInscribete = new System.Windows.Forms.Button();
             this.buttonRegistrarAeropuerto = new System.Windows.Forms.Button();
             this.buttonCrearVuelo = new System.Windows.Forms.Button();
             this.buttonCrearTarifa = new System.Windows.Forms.Button();
             this.buttonEliminarAeropuerto = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.buttonBuscarVueloIda = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonVuelosYdestinos
@@ -136,34 +138,21 @@
             this.botonCerrarInicio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonCerrarInicio.BackgroundImage")));
             this.botonCerrarInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.botonCerrarInicio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.botonCerrarInicio.Location = new System.Drawing.Point(1309, 3);
+            this.botonCerrarInicio.Location = new System.Drawing.Point(1321, 3);
             this.botonCerrarInicio.Name = "botonCerrarInicio";
-            this.botonCerrarInicio.Size = new System.Drawing.Size(50, 35);
+            this.botonCerrarInicio.Size = new System.Drawing.Size(38, 24);
             this.botonCerrarInicio.TabIndex = 8;
             this.botonCerrarInicio.UseVisualStyleBackColor = true;
             this.botonCerrarInicio.Click += new System.EventHandler(this.botonCerrarInicio_Click);
-            // 
-            // botonMaximizarInicio
-            // 
-            this.botonMaximizarInicio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonMaximizarInicio.BackgroundImage")));
-            this.botonMaximizarInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.botonMaximizarInicio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.botonMaximizarInicio.ForeColor = System.Drawing.Color.Transparent;
-            this.botonMaximizarInicio.Location = new System.Drawing.Point(1253, 3);
-            this.botonMaximizarInicio.Name = "botonMaximizarInicio";
-            this.botonMaximizarInicio.Size = new System.Drawing.Size(50, 35);
-            this.botonMaximizarInicio.TabIndex = 9;
-            this.botonMaximizarInicio.UseVisualStyleBackColor = true;
-            this.botonMaximizarInicio.Click += new System.EventHandler(this.botonMaximizarInicio_Click);
             // 
             // botonMinimizarInicio
             // 
             this.botonMinimizarInicio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonMinimizarInicio.BackgroundImage")));
             this.botonMinimizarInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.botonMinimizarInicio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.botonMinimizarInicio.Location = new System.Drawing.Point(1197, 3);
+            this.botonMinimizarInicio.Location = new System.Drawing.Point(1277, 3);
             this.botonMinimizarInicio.Name = "botonMinimizarInicio";
-            this.botonMinimizarInicio.Size = new System.Drawing.Size(50, 35);
+            this.botonMinimizarInicio.Size = new System.Drawing.Size(38, 24);
             this.botonMinimizarInicio.TabIndex = 10;
             this.botonMinimizarInicio.UseVisualStyleBackColor = true;
             this.botonMinimizarInicio.Click += new System.EventHandler(this.botonMinimizarInicio_Click);
@@ -234,19 +223,42 @@
             this.buttonEliminarAeropuerto.UseVisualStyleBackColor = true;
             this.buttonEliminarAeropuerto.Click += new System.EventHandler(this.buttonEliminarAeropuerto_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.Location = new System.Drawing.Point(241, 24);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1128, 276);
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            // 
+            // buttonBuscarVueloIda
+            // 
+            this.buttonBuscarVueloIda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBuscarVueloIda.BackgroundImage")));
+            this.buttonBuscarVueloIda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBuscarVueloIda.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBuscarVueloIda.Location = new System.Drawing.Point(36, 653);
+            this.buttonBuscarVueloIda.Name = "buttonBuscarVueloIda";
+            this.buttonBuscarVueloIda.Size = new System.Drawing.Size(165, 50);
+            this.buttonBuscarVueloIda.TabIndex = 17;
+            this.buttonBuscarVueloIda.Text = "Buscar Vuelo Ida";
+            this.buttonBuscarVueloIda.UseVisualStyleBackColor = true;
+            this.buttonBuscarVueloIda.Click += new System.EventHandler(this.buttonBuscarVueloIda_Click);
+            // 
             // menuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1368, 788);
+            this.Controls.Add(this.buttonBuscarVueloIda);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.buttonEliminarAeropuerto);
             this.Controls.Add(this.buttonCrearTarifa);
             this.Controls.Add(this.buttonCrearVuelo);
             this.Controls.Add(this.buttonRegistrarAeropuerto);
             this.Controls.Add(this.buttonInscribete);
             this.Controls.Add(this.botonMinimizarInicio);
-            this.Controls.Add(this.botonMaximizarInicio);
             this.Controls.Add(this.botonCerrarInicio);
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.buttonCrearTramo);
@@ -260,6 +272,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -274,13 +287,14 @@
         private System.Windows.Forms.Button buttonCrearTramo;
         private System.Windows.Forms.Button btnIniciarSesion;
         private System.Windows.Forms.Button botonCerrarInicio;
-        private System.Windows.Forms.Button botonMaximizarInicio;
         private System.Windows.Forms.Button botonMinimizarInicio;
         private System.Windows.Forms.Button buttonInscribete;
         private System.Windows.Forms.Button buttonRegistrarAeropuerto;
         private System.Windows.Forms.Button buttonCrearVuelo;
         private System.Windows.Forms.Button buttonCrearTarifa;
         private System.Windows.Forms.Button buttonEliminarAeropuerto;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button buttonBuscarVueloIda;
     }
 }
 
