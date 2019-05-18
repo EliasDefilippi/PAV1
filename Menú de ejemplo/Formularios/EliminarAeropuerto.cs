@@ -36,7 +36,7 @@ namespace Menú_de_ejemplo.Formularios
             try
             {
                 string eliminarAeropuerto = string.Format("EXEC EliminarAeropuerto '{0}'", aeropuerto);
-                MessageBox.Show(eliminarAeropuerto);
+
                 Utilidades.Ejecutar(eliminarAeropuerto);
                 MessageBox.Show("Se eliminó el aeropuerto seleccionado exitosamente.");
                 this.Close();
@@ -44,7 +44,8 @@ namespace Menú_de_ejemplo.Formularios
             catch (Exception e)
             {
                 MessageBox.Show("Error al eliminar el aeropuerto seleccionado. Intente nuevamente más tarde.");
-                MessageBox.Show(e.Message);
+
+                
             }
         }
 

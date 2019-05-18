@@ -162,6 +162,13 @@ namespace Menú_de_ejemplo.Formularios
            
 
 
+           
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             string insertVuelo = string.Format("INSERT INTO [LAFAST_gestor_de_reservas].[dbo].[tramos] (id_aeropuerto_origen ,id_aeropuerto_destino, distancia_tramo , id_vuelo,id_avion , fecha_salida_vuelo , duracion) VALUES (  {0} , {1} , {2} , {3} , {4} , '{5}' , {6} );", id_aeropuerto_origen, id_aeropuerto_destino, distancia, id_vuelo, id_avion, fecha_salida_vuelo.ToString("yyyy-MM-dd"), duracion);
 
             Utilidades.Ejecutar(insertVuelo);
@@ -169,13 +176,11 @@ namespace Menú_de_ejemplo.Formularios
             MessageBox.Show("Se asigno el vuelo al tramo correspondiete ");
 
             this.Close();
-
-
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
     }
 }

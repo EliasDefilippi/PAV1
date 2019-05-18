@@ -52,8 +52,8 @@
             this.categoria_pasajeroTableAdapter = new Menú_de_ejemplo.combox_localidadTableAdapters.categoria_pasajeroTableAdapter();
             this.comboxlocalidadBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.localidadesTableAdapter1 = new Menú_de_ejemplo.localidades2TableAdapters.localidadesTableAdapter();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxAdultos = new System.Windows.Forms.ComboBox();
+            this.comboBoxMenores = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.localidadesBindingSource)).BeginInit();
@@ -76,6 +76,7 @@
             this.botonBuscarVuelos.Size = new System.Drawing.Size(294, 52);
             this.botonBuscarVuelos.TabIndex = 9;
             this.botonBuscarVuelos.UseVisualStyleBackColor = true;
+            this.botonBuscarVuelos.Click += new System.EventHandler(this.botonBuscarVuelos_Click);
             // 
             // checkBoxIdaYvuelta
             // 
@@ -147,7 +148,6 @@
             this.comboBoxDestino.Size = new System.Drawing.Size(293, 21);
             this.comboBoxDestino.TabIndex = 2;
             this.comboBoxDestino.ValueMember = "id_localidad";
-            this.comboBoxDestino.SelectedIndexChanged += new System.EventHandler(this.comboBoxDestino_SelectedIndexChanged);
             this.comboBoxDestino.SelectionChangeCommitted += new System.EventHandler(this.comboBoxOrigen_SelectedIndexChanged);
             // 
             // localidadesBindingSource1
@@ -234,10 +234,10 @@
             // 
             this.localidadesTableAdapter1.ClearBeforeFill = true;
             // 
-            // comboBox1
+            // comboBoxAdultos
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxAdultos.FormattingEnabled = true;
+            this.comboBoxAdultos.Items.AddRange(new object[] {
             "01",
             "02",
             "03",
@@ -247,17 +247,16 @@
             "07",
             "08",
             "09"});
-            this.comboBox1.Location = new System.Drawing.Point(101, 261);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(36, 21);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBoxAdultos.Location = new System.Drawing.Point(101, 261);
+            this.comboBoxAdultos.Name = "comboBoxAdultos";
+            this.comboBoxAdultos.Size = new System.Drawing.Size(36, 21);
+            this.comboBoxAdultos.TabIndex = 5;
             // 
-            // comboBox2
+            // comboBoxMenores
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.ItemHeight = 13;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxMenores.FormattingEnabled = true;
+            this.comboBoxMenores.ItemHeight = 13;
+            this.comboBoxMenores.Items.AddRange(new object[] {
             "01",
             "02",
             "03",
@@ -267,10 +266,10 @@
             "07",
             "08",
             "08"});
-            this.comboBox2.Location = new System.Drawing.Point(229, 261);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(36, 21);
-            this.comboBox2.TabIndex = 6;
+            this.comboBoxMenores.Location = new System.Drawing.Point(229, 261);
+            this.comboBoxMenores.Name = "comboBoxMenores";
+            this.comboBoxMenores.Size = new System.Drawing.Size(36, 21);
+            this.comboBoxMenores.TabIndex = 6;
             // 
             // label1
             // 
@@ -303,8 +302,8 @@
             this.ClientSize = new System.Drawing.Size(714, 460);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxMenores);
+            this.Controls.Add(this.comboBoxAdultos);
             this.Controls.Add(this.botonCerrarVuelosDestinos);
             this.Controls.Add(this.dateTimeVUELTA);
             this.Controls.Add(this.dateTimeIDA);
@@ -358,8 +357,8 @@
         private localidades2 localidades2;
         private System.Windows.Forms.BindingSource localidadesBindingSource1;
         private localidades2TableAdapters.localidadesTableAdapter localidadesTableAdapter1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxAdultos;
+        private System.Windows.Forms.ComboBox comboBoxMenores;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

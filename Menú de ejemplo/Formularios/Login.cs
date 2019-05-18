@@ -45,7 +45,7 @@ namespace Menú_de_ejemplo
 
                     if (cadena == textBoxUsuario.Text.Trim() && contra == textBoxContraseña.Text.Trim())
                     {
-                        MessageBox.Show("Usted se ah logueado correctamente");
+                        MessageBox.Show("Usted se ha logueado correctamente");
                     }
                     else
                     {

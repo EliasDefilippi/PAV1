@@ -224,7 +224,7 @@
             this.textBoxNombre.Size = new System.Drawing.Size(326, 31);
             this.textBoxNombre.SoloCaracteres = true;
             this.textBoxNombre.SoloNumeros = false;
-            this.textBoxNombre.TabIndex = 13;
+            this.textBoxNombre.TabIndex = 1;
             this.textBoxNombre.Validar = true;
             // 
             // textBoxApellido
@@ -234,7 +234,7 @@
             this.textBoxApellido.Size = new System.Drawing.Size(326, 31);
             this.textBoxApellido.SoloCaracteres = true;
             this.textBoxApellido.SoloNumeros = false;
-            this.textBoxApellido.TabIndex = 14;
+            this.textBoxApellido.TabIndex = 2;
             this.textBoxApellido.Validar = true;
             // 
             // textBoxAñoNac
@@ -244,7 +244,7 @@
             this.textBoxAñoNac.Size = new System.Drawing.Size(103, 31);
             this.textBoxAñoNac.SoloCaracteres = false;
             this.textBoxAñoNac.SoloNumeros = true;
-            this.textBoxAñoNac.TabIndex = 15;
+            this.textBoxAñoNac.TabIndex = 5;
             this.textBoxAñoNac.Validar = true;
             // 
             // textBoxNumeroTelefono
@@ -254,7 +254,7 @@
             this.textBoxNumeroTelefono.Size = new System.Drawing.Size(251, 31);
             this.textBoxNumeroTelefono.SoloCaracteres = false;
             this.textBoxNumeroTelefono.SoloNumeros = true;
-            this.textBoxNumeroTelefono.TabIndex = 17;
+            this.textBoxNumeroTelefono.TabIndex = 7;
             this.textBoxNumeroTelefono.Validar = true;
             // 
             // textBoxCodigoPais
@@ -264,7 +264,7 @@
             this.textBoxCodigoPais.Size = new System.Drawing.Size(56, 31);
             this.textBoxCodigoPais.SoloCaracteres = false;
             this.textBoxCodigoPais.SoloNumeros = true;
-            this.textBoxCodigoPais.TabIndex = 18;
+            this.textBoxCodigoPais.TabIndex = 6;
             this.textBoxCodigoPais.Validar = true;
             // 
             // textBoxNumeroDocumento
@@ -272,7 +272,7 @@
             this.textBoxNumeroDocumento.Location = new System.Drawing.Point(501, 267);
             this.textBoxNumeroDocumento.Name = "textBoxNumeroDocumento";
             this.textBoxNumeroDocumento.Size = new System.Drawing.Size(324, 31);
-            this.textBoxNumeroDocumento.TabIndex = 21;
+            this.textBoxNumeroDocumento.TabIndex = 10;
             // 
             // datos_personales_CrearUsuario
             // 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Mi_Liberia_LF;
 
 namespace Menú_de_ejemplo
 {
@@ -15,8 +16,6 @@ namespace Menú_de_ejemplo
         public buscarVuelosYdestinos()
         {
             InitializeComponent();
-           
-            //SelectedValue("id_aeropuerto");
 
         }
 
@@ -51,14 +50,20 @@ namespace Menú_de_ejemplo
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void botonBuscarVuelos_Click(object sender, EventArgs e)
         {
 
-        }
+            String vuelos = String.Format("SELECT id_vuelo ,nro_vuelo , id_avion, fecha_salida_vuelo, id_asiento , id_tipo_documento_pasajero numero_documento_pasajero, id_tarifa_vuelo FROM [LAFAST_gestor_de_reservas].[dbo].[vuelos] where fecha_salida_vuelo = '{0}'", dateTimeIDA.Value.ToString("yyyy-MM-dd"));
 
-        private void comboBoxDestino_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
+            DataSet dt = Utilidades.Ejecutar(vuelos);
+
+            DataTable customerTable = dt.Tables["Table"];
+            for (int i = 0; i < customerTable.Rows.Count; i++)
+            {
+                String s = dt.Tables["Table"].Rows[i]["id_avion"].ToString();
+
+                MessageBox.Show(s);             }
         }
     }
 }
