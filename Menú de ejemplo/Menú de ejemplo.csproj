@@ -67,6 +67,12 @@
     <Compile Include="Formularios\buscarVuelosYdestinos.Designer.cs">
       <DependentUpon>buscarVuelosYdestinos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\buscarVuelosYdestinosSoloIDA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\buscarVuelosYdestinosSoloIDA.Designer.cs">
+      <DependentUpon>buscarVuelosYdestinosSoloIDA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\CrearTarifa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\buscarVuelosYdestinos.resx">
       <DependentUpon>buscarVuelosYdestinos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\buscarVuelosYdestinosSoloIDA.resx">
+      <DependentUpon>buscarVuelosYdestinosSoloIDA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CrearTarifa.resx">
       <DependentUpon>CrearTarifa.cs</DependentUpon>
