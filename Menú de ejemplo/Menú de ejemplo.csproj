@@ -145,6 +145,12 @@
     <Compile Include="Formularios\SeleccionPais_CrearUsuario.Designer.cs">
       <DependentUpon>SeleccionPais_CrearUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\seleccionTipoVuelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\seleccionTipoVuelo.Designer.cs">
+      <DependentUpon>seleccionTipoVuelo.cs</DependentUpon>
+    </Compile>
     <Compile Include="LAFAST_gestor_de_reservas.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -213,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\menuPrincipal.resx">
       <DependentUpon>menuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\seleccionTipoVuelo.resx">
+      <DependentUpon>seleccionTipoVuelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

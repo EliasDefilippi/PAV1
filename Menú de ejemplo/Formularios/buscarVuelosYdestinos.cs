@@ -53,17 +53,28 @@ namespace Menú_de_ejemplo
         private void botonBuscarVuelos_Click(object sender, EventArgs e)
         {
 
-            String vuelos = String.Format("SELECT id_vuelo ,nro_vuelo , id_avion, fecha_salida_vuelo, id_asiento , id_tipo_documento_pasajero numero_documento_pasajero, id_tarifa_vuelo FROM [LAFAST_gestor_de_reservas].[dbo].[vuelos] where fecha_salida_vuelo = '{0}'", dateTimeIDA.Value.ToString("yyyy-MM-dd"));
+        String vuelos = String.Format("SELECT vuelos.id_vuelo ,vuelos.nro_vuelo ,vuelos.id_avion ,vuelos.fecha_salida_vuelo ,tarifas.clase_tarifa, tarifas.precio_tarifa FROM[LAFAST_gestor_de_reservas].[dbo].[vuelos] join[LAFAST_gestor_de_reservas].[dbo].[tramos] on vuelos.id_vuelo=tramos.id_vuelo join [LAFAST_gestor_de_reservas].[dbo].[tarifas] on vuelos.id_tarifa_vuelo= tarifas.id_tarifa where tramos.id_aeropuerto_destino ={1} and tramos.id_aeropuerto_origen ={0} and vuelos.fecha_salida_vuelo ='{2}';",comboBoxOrigen.SelectedValue,comboBoxDestino.SelectedValue, dateTimeIDA.Value.ToString("yyyy-MM-dd"));
 
+            int origen = int.Parse(comboBoxOrigen.SelectedValue.ToString());
+            int destino = int.Parse(comboBoxDestino.SelectedValue.ToString());
 
             DataSet dt = Utilidades.Ejecutar(vuelos);
 
             DataTable customerTable = dt.Tables["Table"];
             for (int i = 0; i < customerTable.Rows.Count; i++)
             {
-                String s = dt.Tables["Table"].Rows[i]["id_avion"].ToString();
+                String s = dt.Tables["Table"].Rows[i]["id_vuelo"].ToString();
 
-                MessageBox.Show(s);             }
+                MessageBox.Show(s);
+
+            }
+        }
+
+        private void botonBuscarVuelos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Formularios.formVuelosIdaVueltaDisponibles vuelosDisponibles = new Formularios.formVuelosIdaVueltaDisponibles();
+            vuelosDisponibles.Show();
         }
     }
 }

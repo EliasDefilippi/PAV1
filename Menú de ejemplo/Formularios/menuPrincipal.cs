@@ -30,8 +30,8 @@ namespace Menú_de_ejemplo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            buscarVuelosYdestinos ventanaVuelosDestinos = new buscarVuelosYdestinos();
-            ventanaVuelosDestinos.Show();
+            Formularios.seleccionTipoVuelo ventanaTipoVuelos = new Formularios.seleccionTipoVuelo(); 
+            ventanaTipoVuelos.Show();
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
