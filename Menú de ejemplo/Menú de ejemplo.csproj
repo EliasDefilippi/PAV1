@@ -109,6 +109,18 @@
     <Compile Include="Formularios\EliminarAeropuerto.Designer.cs">
       <DependentUpon>EliminarAeropuerto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\formVuelosIdaDisponibles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formVuelosIdaDisponibles.Designer.cs">
+      <DependentUpon>formVuelosIdaDisponibles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\formVuelosIdaVueltaDisponibles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formVuelosIdaVueltaDisponibles.Designer.cs">
+      <DependentUpon>formVuelosIdaVueltaDisponibles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +207,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\EliminarAeropuerto.resx">
       <DependentUpon>EliminarAeropuerto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formVuelosIdaDisponibles.resx">
+      <DependentUpon>formVuelosIdaDisponibles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formVuelosIdaVueltaDisponibles.resx">
+      <DependentUpon>formVuelosIdaVueltaDisponibles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistrarAeropuerto.resx">
       <DependentUpon>RegistrarAeropuerto.cs</DependentUpon>
