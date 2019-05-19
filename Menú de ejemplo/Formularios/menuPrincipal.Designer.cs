@@ -44,7 +44,6 @@
             this.buttonCrearTarifa = new System.Windows.Forms.Button();
             this.buttonEliminarAeropuerto = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.buttonBuscarVueloIda = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -226,24 +225,12 @@
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(241, 24);
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(240, 57);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1128, 276);
+            this.pictureBox2.Size = new System.Drawing.Size(1126, 276);
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
-            // 
-            // buttonBuscarVueloIda
-            // 
-            this.buttonBuscarVueloIda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBuscarVueloIda.BackgroundImage")));
-            this.buttonBuscarVueloIda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBuscarVueloIda.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBuscarVueloIda.Location = new System.Drawing.Point(36, 653);
-            this.buttonBuscarVueloIda.Name = "buttonBuscarVueloIda";
-            this.buttonBuscarVueloIda.Size = new System.Drawing.Size(165, 50);
-            this.buttonBuscarVueloIda.TabIndex = 17;
-            this.buttonBuscarVueloIda.Text = "Buscar Vuelo Ida";
-            this.buttonBuscarVueloIda.UseVisualStyleBackColor = true;
-            this.buttonBuscarVueloIda.Click += new System.EventHandler(this.buttonBuscarVueloIda_Click);
             // 
             // menuPrincipal
             // 
@@ -251,7 +238,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1368, 788);
-            this.Controls.Add(this.buttonBuscarVueloIda);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.buttonEliminarAeropuerto);
             this.Controls.Add(this.buttonCrearTarifa);
@@ -294,7 +280,6 @@
         private System.Windows.Forms.Button buttonCrearTarifa;
         private System.Windows.Forms.Button buttonEliminarAeropuerto;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button buttonBuscarVueloIda;
     }
 }
 
