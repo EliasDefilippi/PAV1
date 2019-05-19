@@ -69,5 +69,12 @@ namespace Menú_de_ejemplo
 
             }
         }
+
+        private void botonBuscarVuelos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Formularios.formVuelosIdaVueltaDisponibles vuelosDisponibles = new Formularios.formVuelosIdaVueltaDisponibles();
+            vuelosDisponibles.Show();
+        }
     }
 }
