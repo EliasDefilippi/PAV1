@@ -115,6 +115,18 @@
     <Compile Include="Formularios\formVuelosIdaDisponibles.Designer.cs">
       <DependentUpon>formVuelosIdaDisponibles.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\formSeleccionAsientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formSeleccionAsientos.Designer.cs">
+      <DependentUpon>formSeleccionAsientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\formVuelosVueltaDisponibles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formVuelosVueltaDisponibles.Designer.cs">
+      <DependentUpon>formVuelosVueltaDisponibles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\formVuelosIdaVueltaDisponibles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +228,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formVuelosIdaDisponibles.resx">
       <DependentUpon>formVuelosIdaDisponibles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formSeleccionAsientos.resx">
+      <DependentUpon>formSeleccionAsientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formVuelosVueltaDisponibles.resx">
+      <DependentUpon>formVuelosVueltaDisponibles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formVuelosIdaVueltaDisponibles.resx">
       <DependentUpon>formVuelosIdaVueltaDisponibles.cs</DependentUpon>

@@ -41,7 +41,7 @@ namespace Menú_de_ejemplo.Formularios
                 MessageBox.Show("Se eliminó el aeropuerto seleccionado exitosamente.");
                 this.Close();
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 MessageBox.Show("Error al eliminar el aeropuerto seleccionado. Intente nuevamente más tarde.");
 
