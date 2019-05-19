@@ -75,6 +75,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formVuelosIdaDisponibles";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formVuelosIdaDisponibles";
             this.ResumeLayout(false);
 
