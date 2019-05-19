@@ -52,8 +52,9 @@ namespace Menú_de_ejemplo
 
         private void botonBuscarVuelos_Click(object sender, EventArgs e)
         {
-
-        String vuelos = String.Format("SELECT vuelos.id_vuelo ,vuelos.nro_vuelo ,vuelos.id_avion ,vuelos.fecha_salida_vuelo ,tarifas.clase_tarifa, tarifas.precio_tarifa FROM[LAFAST_gestor_de_reservas].[dbo].[vuelos] join[LAFAST_gestor_de_reservas].[dbo].[tramos] on vuelos.id_vuelo=tramos.id_vuelo join [LAFAST_gestor_de_reservas].[dbo].[tarifas] on vuelos.id_tarifa_vuelo= tarifas.id_tarifa where tramos.id_aeropuerto_destino ={1} and tramos.id_aeropuerto_origen ={0} and vuelos.fecha_salida_vuelo ='{2}';",comboBoxOrigen.SelectedValue,comboBoxDestino.SelectedValue, dateTimeIDA.Value.ToString("yyyy-MM-dd"));
+            Formularios.formVuelosIdaVueltaDisponibles vuelosDisponibles = new Formularios.formVuelosIdaVueltaDisponibles();
+            vuelosDisponibles.Show();
+            /*String vuelos = String.Format("SELECT vuelos.id_vuelo ,vuelos.nro_vuelo ,vuelos.id_avion ,vuelos.fecha_salida_vuelo ,tarifas.clase_tarifa, tarifas.precio_tarifa FROM[LAFAST_gestor_de_reservas].[dbo].[vuelos] join[LAFAST_gestor_de_reservas].[dbo].[tramos] on vuelos.id_vuelo=tramos.id_vuelo join [LAFAST_gestor_de_reservas].[dbo].[tarifas] on vuelos.id_tarifa_vuelo= tarifas.id_tarifa where tramos.id_aeropuerto_destino ={1} and tramos.id_aeropuerto_origen ={0} and vuelos.fecha_salida_vuelo ='{2}';",comboBoxOrigen.SelectedValue,comboBoxDestino.SelectedValue, dateTimeIDA.Value.ToString("yyyy-MM-dd"));
 
             int origen = int.Parse(comboBoxOrigen.SelectedValue.ToString());
             int destino = int.Parse(comboBoxDestino.SelectedValue.ToString());
@@ -67,14 +68,9 @@ namespace Menú_de_ejemplo
 
                 MessageBox.Show(s);
 
-            }
+            }*/
         }
 
-        private void botonBuscarVuelos_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Formularios.formVuelosIdaVueltaDisponibles vuelosDisponibles = new Formularios.formVuelosIdaVueltaDisponibles();
-            vuelosDisponibles.Show();
-        }
+       
     }
 }
