@@ -52,6 +52,7 @@ namespace Menú_de_ejemplo
 
         private void botonBuscarVuelos_Click(object sender, EventArgs e)
         {
+
             Formularios.formVuelosIdaVueltaDisponibles vuelosDisponibles = new Formularios.formVuelosIdaVueltaDisponibles();
             vuelosDisponibles.Show();
             /*String vuelos = String.Format("SELECT vuelos.id_vuelo ,vuelos.nro_vuelo ,vuelos.id_avion ,vuelos.fecha_salida_vuelo ,tarifas.clase_tarifa, tarifas.precio_tarifa FROM[LAFAST_gestor_de_reservas].[dbo].[vuelos] join[LAFAST_gestor_de_reservas].[dbo].[tramos] on vuelos.id_vuelo=tramos.id_vuelo join [LAFAST_gestor_de_reservas].[dbo].[tarifas] on vuelos.id_tarifa_vuelo= tarifas.id_tarifa where tramos.id_aeropuerto_destino ={1} and tramos.id_aeropuerto_origen ={0} and vuelos.fecha_salida_vuelo ='{2}';",comboBoxOrigen.SelectedValue,comboBoxDestino.SelectedValue, dateTimeIDA.Value.ToString("yyyy-MM-dd"));
@@ -71,6 +72,25 @@ namespace Menú_de_ejemplo
             }*/
         }
 
-       
+
+
+            Formularios.formVuelosIdaVueltaDisponibles vuelosDisponibles = new Formularios.formVuelosIdaVueltaDisponibles(dateTimeIDA.Value, int.Parse(comboBoxOrigen.SelectedValue.ToString()), int.Parse(comboBoxDestino.SelectedValue.ToString()), dateTimeVUELTA.Value, checkBoxIda.Checked);
+
+            vuelosDisponibles.Show();
+            
+        }
+
+        private void checkBoxIda_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxIda.Checked)
+            {
+                dateTimeVUELTA.Enabled = false;
+            }
+            else
+            {
+                dateTimeVUELTA.Enabled = true;
+            }
+        }
+>>>>>>> #ultimoElias
     }
 }

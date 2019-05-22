@@ -97,6 +97,7 @@
             this.checkBoxIda.Size = new System.Drawing.Size(15, 14);
             this.checkBoxIda.TabIndex = 2;
             this.checkBoxIda.UseVisualStyleBackColor = false;
+            this.checkBoxIda.CheckedChanged += new System.EventHandler(this.checkBoxIda_CheckedChanged);
             // 
             // checkBox1
             // 
