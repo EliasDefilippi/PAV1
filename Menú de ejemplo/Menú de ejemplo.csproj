@@ -109,6 +109,24 @@
     <Compile Include="Formularios\EliminarAeropuerto.Designer.cs">
       <DependentUpon>EliminarAeropuerto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\formCodigoReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formCodigoReserva.Designer.cs">
+      <DependentUpon>formCodigoReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\formRegistrarReservaDatosAcompañante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formRegistrarReservaDatosAcompañante.Designer.cs">
+      <DependentUpon>formRegistrarReservaDatosAcompañante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\formRegistrarReservaDatosTitular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formRegistrarReservaDatosTitular.Designer.cs">
+      <DependentUpon>formRegistrarReservaDatosTitular.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\formVuelosIdaDisponibles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +150,12 @@
     </Compile>
     <Compile Include="Formularios\menuPrincipal.Designer.cs">
       <DependentUpon>menuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\mostrarDatosDeVuelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\mostrarDatosDeVuelo.Designer.cs">
+      <DependentUpon>mostrarDatosDeVuelo.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\RegistrarAeropuerto.cs">
       <SubType>Form</SubType>
@@ -208,11 +232,23 @@
     <EmbeddedResource Include="Formularios\EliminarAeropuerto.resx">
       <DependentUpon>EliminarAeropuerto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formCodigoReserva.resx">
+      <DependentUpon>formCodigoReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formRegistrarReservaDatosAcompañante.resx">
+      <DependentUpon>formRegistrarReservaDatosAcompañante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formRegistrarReservaDatosTitular.resx">
+      <DependentUpon>formRegistrarReservaDatosTitular.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formVuelosIdaDisponibles.resx">
       <DependentUpon>formVuelosIdaDisponibles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formVuelosIdaVueltaDisponibles.resx">
       <DependentUpon>formVuelosIdaVueltaDisponibles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\mostrarDatosDeVuelo.resx">
+      <DependentUpon>mostrarDatosDeVuelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistrarAeropuerto.resx">
       <DependentUpon>RegistrarAeropuerto.cs</DependentUpon>
