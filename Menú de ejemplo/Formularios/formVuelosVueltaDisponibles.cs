@@ -19,13 +19,18 @@ namespace Menú_de_ejemplo.Formularios
         private int aeropuertoDestino;
         private int id_vuelo_salida;
         private int id_vuelo_vuelta;
+        private DateTime fecha_salida_ida;
+        private int cantidad;
 
-        public formVuelosVueltaDisponibles(DateTime fecha_salida, int aeropuertoOrigen, int aeropuertoDestino)
+
+        public formVuelosVueltaDisponibles(DateTime fecha_salida, int aeropuertoOrigen, int aeropuertoDestino, DateTime fecha_salida_ida,int cantidad)
         {
             InitializeComponent();
             this.fecha_salida_vuelo = fecha_salida;
             this.aeropuertoOrigen = aeropuertoOrigen;
             this.aeropuertoDestino = aeropuertoDestino;
+            this.fecha_salida_ida = fecha_salida_ida;
+            this.cantidad = cantidad;
             formVuelosIdaVueltaDisponibles_Load();
         }
         
@@ -59,7 +64,7 @@ namespace Menú_de_ejemplo.Formularios
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             
-            formSeleccionAsientos formAsiento = new formSeleccionAsientos(propertyFecha_salida_vuelo, propertyAeropuertoOrigen, propertyAeropuertoDestino, propertyId_vuelo_salida, propertyId_vuelo_vuelta);
+            formSeleccionAsientos formAsiento = new formSeleccionAsientos(propertyFecha_salida_vuelo, propertyAeropuertoOrigen, propertyAeropuertoDestino, propertyId_vuelo_salida, propertyId_vuelo_vuelta, propertyFecha_salida_ida, propertyCantidad);
             formAsiento.Show();
 
             this.Close();
@@ -72,6 +77,13 @@ namespace Menú_de_ejemplo.Formularios
             set { fecha_salida_vuelo = value; }
         }
 
+        
+             public DateTime propertyFecha_salida_ida
+        {
+            get { return fecha_salida_ida; }
+
+            set { fecha_salida_ida = value; }
+        }
         public int propertyAeropuertoOrigen
         {
             get { return aeropuertoOrigen; }
@@ -99,6 +111,14 @@ namespace Menú_de_ejemplo.Formularios
 
             set { id_vuelo_vuelta = value; }
         }
+
+        public int propertyCantidad
+        {
+            get { return cantidad; }
+
+            set { cantidad = value; }
+        }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {

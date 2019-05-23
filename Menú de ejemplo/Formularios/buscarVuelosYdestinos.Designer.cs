@@ -239,15 +239,15 @@
             // 
             this.comboBoxAdultos.FormattingEnabled = true;
             this.comboBoxAdultos.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09"});
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"});
             this.comboBoxAdultos.Location = new System.Drawing.Point(101, 261);
             this.comboBoxAdultos.Name = "comboBoxAdultos";
             this.comboBoxAdultos.Size = new System.Drawing.Size(36, 21);
