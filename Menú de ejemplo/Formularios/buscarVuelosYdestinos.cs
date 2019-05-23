@@ -52,11 +52,10 @@ namespace Menú_de_ejemplo
 
         private void botonBuscarVuelos_Click(object sender, EventArgs e)
         {
-
-            Formularios.formVuelosIdaVueltaDisponibles vuelosDisponibles = new Formularios.formVuelosIdaVueltaDisponibles(dateTimeIDA.Value, int.Parse(comboBoxOrigen.SelectedValue.ToString()), int.Parse(comboBoxDestino.SelectedValue.ToString()), dateTimeVUELTA.Value, checkBoxIda.Checked);
+        Formularios.formVuelosIdaVueltaDisponibles vuelosDisponibles = new Formularios.formVuelosIdaVueltaDisponibles(dateTimeIDA.Value, int.Parse(comboBoxOrigen.SelectedValue.ToString()), int.Parse(comboBoxDestino.SelectedValue.ToString()), dateTimeVUELTA.Value, checkBoxIda.Checked, int.Parse(comboBoxAdultos.Text));
 
             vuelosDisponibles.Show();
-            
+
         }
 
         private void checkBoxIda_CheckedChanged(object sender, EventArgs e)
