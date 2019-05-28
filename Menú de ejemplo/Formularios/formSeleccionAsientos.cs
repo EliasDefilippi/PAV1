@@ -21,11 +21,8 @@ namespace Menú_de_ejemplo.Formularios
         private int id_vuelo_vuelta;
         private int idAsientoIda;
         private int idAsientoVuelta;
-        private DateTime fecha_salida_ida;
-        private int cantidad;
-        
 
-        public formSeleccionAsientos(DateTime fecha_salida, int aeropuertoOrigen, int aeropuertoDestino, int id_vuelo_salida, int id_vuelo_vuelta, DateTime fecha_salida_ida,int  cantidad)
+        public formSeleccionAsientos(DateTime fecha_salida, int aeropuertoOrigen, int aeropuertoDestino, int id_vuelo_salida, int id_vuelo_vuelta)
         {
             InitializeComponent();
             this.fecha_salida_vuelo = fecha_salida;
@@ -33,8 +30,6 @@ namespace Menú_de_ejemplo.Formularios
             this.aeropuertoDestino = aeropuertoDestino;
             this.id_vuelo_salida = id_vuelo_salida;
             this.id_vuelo_vuelta = id_vuelo_vuelta;
-            this.fecha_salida_ida = fecha_salida_ida;
-            this.cantidad = cantidad;
             formAsientos_Load();
         }
         
@@ -71,27 +66,11 @@ namespace Menú_de_ejemplo.Formularios
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
-
-            mostrarDatosDeVuelo titular = new mostrarDatosDeVuelo (propertyFecha_salida_vuelo, propertyAeropuertoOrigen, propertyAeropuertoDestino, propertyId_vuelo_salida, propertyId_vuelo_vuelta, propertyIdAsientoIda, propertyIdAsientoVuelta, propertyFecha_salida_ida,propertyCantidad);
-
-
-            titular.Show();
-
-
-            // MessageBox.Show(""+propertyIdAsientoIda);
-            //MessageBox.Show("" + propertyIdAsientoVuelta);
-             this.Close();
+            MessageBox.Show(""+propertyIdAsientoIda);
+            MessageBox.Show("" + propertyIdAsientoVuelta);
+            this.Close();
         }
 
-
-        
-
-             public DateTime propertyFecha_salida_ida
-        {
-            get { return fecha_salida_ida; }
-
-            set { fecha_salida_ida = value; }
-        }
         public DateTime propertyFecha_salida_vuelo
         {
             get { return fecha_salida_vuelo; }
@@ -134,13 +113,6 @@ namespace Menú_de_ejemplo.Formularios
             set { idAsientoIda = value; }
         }
 
-        
-            public int propertyCantidad
-        {
-            get { return cantidad; }
-
-            set { cantidad = value; }
-        }
         public int propertyIdAsientoVuelta
         {
             get { return idAsientoVuelta; }
@@ -153,6 +125,12 @@ namespace Menú_de_ejemplo.Formularios
 
         }
 
+        private void vuelosVuelta_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            propertyIdAsientoIda = int.Parse(asientosIda.Rows[e.RowIndex].Cells["Fila"].Value.ToString());
+            
+
+        }
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -161,17 +139,7 @@ namespace Menú_de_ejemplo.Formularios
 
         private void asientosVueta_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
             propertyIdAsientoVuelta = int.Parse(asientosVueta.Rows[e.RowIndex].Cells["Fila"].Value.ToString());
-       
-            MessageBox.Show("Se selecciono el asiento : " + propertyIdAsientoVuelta + asientosVueta.Rows[e.RowIndex].Cells["Letra"].Value.ToString());
-        }
-
-        private void asientosIda_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            propertyIdAsientoIda = int.Parse(asientosIda.Rows[e.RowIndex].Cells["Fila"].Value.ToString());
-            MessageBox.Show("Se selecciono el asiento : " + propertyIdAsientoIda + asientosIda.Rows[e.RowIndex].Cells["Letra"].Value.ToString());
-       
         }
     }
 
