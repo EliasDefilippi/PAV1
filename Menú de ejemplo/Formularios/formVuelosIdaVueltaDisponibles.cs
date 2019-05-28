@@ -20,10 +20,10 @@ namespace Menú_de_ejemplo.Formularios
         private DateTime fecha_salida_vuelta;
         private Boolean tieneVuelta;
         private int idVuelo;
-        private int cantidad;
 
 
-        public formVuelosIdaVueltaDisponibles(DateTime fecha_salida, int aeropuertoOrigen, int aeropuertoDestino, DateTime fecha_salida_vuelta,Boolean tieneVuelta,int cantidad)
+
+        public formVuelosIdaVueltaDisponibles(DateTime fecha_salida, int aeropuertoOrigen, int aeropuertoDestino, DateTime fecha_salida_vuelta,Boolean tieneVuelta)
         {
             InitializeComponent();
             this.fecha_salida_vuelo = fecha_salida;
@@ -31,7 +31,6 @@ namespace Menú_de_ejemplo.Formularios
             this.aeropuertoDestino = aeropuertoDestino;
             this.fecha_salida_vuelta = fecha_salida_vuelta;
             this.tieneVuelta = tieneVuelta;
-            this.cantidad = cantidad;
             formVuelosIdaVueltaDisponibles_Load();
         }
         
@@ -75,7 +74,7 @@ namespace Menú_de_ejemplo.Formularios
 
             if (!tieneVuelta)
             {
-                Formularios.formVuelosVueltaDisponibles vuelosDisponiblesVuelta = new Formularios.formVuelosVueltaDisponibles(propertyFecha_salida_vuelta, propertyAeropuertoDestino, propertyAeropuertoOrigen, fecha_salida_vuelo, propertyCantidad);
+                Formularios.formVuelosVueltaDisponibles vuelosDisponiblesVuelta = new Formularios.formVuelosVueltaDisponibles(propertyFecha_salida_vuelta, propertyAeropuertoDestino, propertyAeropuertoOrigen);
                 vuelosDisponiblesVuelta.propertyId_vuelo_salida = idVuelo;
 
                 vuelosDisponiblesVuelta.Show();
@@ -97,15 +96,6 @@ namespace Menú_de_ejemplo.Formularios
 
             set { aeropuertoOrigen = value; }
         }
-
-        
-              public int propertyCantidad
-        {
-            get { return cantidad; }
-
-            set { cantidad = value; }
-        }
-
 
         public int propertyAeropuertoDestino
         {
@@ -140,11 +130,6 @@ namespace Menú_de_ejemplo.Formularios
             this.idVuelo = int.Parse(vuelosIda.Rows[e.RowIndex].Cells["id_vuelo"].Value.ToString());
 
     }
-
-        private void buttonConfirmar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 
 }

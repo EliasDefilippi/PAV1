@@ -63,7 +63,7 @@
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(334, 55);
             this.buttonCancelar.TabIndex = 3;
-            this.buttonCancelar.Text = "Continuar con la Reserva";
+            this.buttonCancelar.Text = "Seleccionar Asientos";
             this.buttonCancelar.UseVisualStyleBackColor = false;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
@@ -82,7 +82,7 @@
             this.asientosIda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.asientosIda.Size = new System.Drawing.Size(339, 337);
             this.asientosIda.TabIndex = 4;
-            this.asientosIda.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.asientosIda_CellContentClick);
+            this.asientosIda.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuelosVuelta_CellContentClick);
             // 
             // label1
             // 
