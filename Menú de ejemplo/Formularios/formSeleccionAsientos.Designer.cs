@@ -51,6 +51,7 @@
             this.buttonConfirmar.TabIndex = 2;
             this.buttonConfirmar.Text = "Cancelar";
             this.buttonConfirmar.UseVisualStyleBackColor = false;
+            this.buttonConfirmar.Click += new System.EventHandler(this.buttonConfirmar_Click);
             // 
             // buttonCancelar
             // 
@@ -76,7 +77,6 @@
             this.asientosIda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.asientosIda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.asientosIda.Location = new System.Drawing.Point(65, 45);
-            this.asientosIda.MultiSelect = false;
             this.asientosIda.Name = "asientosIda";
             this.asientosIda.ReadOnly = true;
             this.asientosIda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -123,7 +123,6 @@
             this.asientosVueta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.asientosVueta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.asientosVueta.Location = new System.Drawing.Point(441, 45);
-            this.asientosVueta.MultiSelect = false;
             this.asientosVueta.Name = "asientosVueta";
             this.asientosVueta.ReadOnly = true;
             this.asientosVueta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

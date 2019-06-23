@@ -35,11 +35,12 @@
             this.linkLabelRegistrarLocalidad = new System.Windows.Forms.LinkLabel();
             this.textBoxNombreAeropuerto = new System.Windows.Forms.TextBox();
             this.comboBoxLocalidad = new System.Windows.Forms.ComboBox();
-            this.combox_localidad = new Menú_de_ejemplo.combox_localidad();
             this.localidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.combox_localidad = new Menú_de_ejemplo.combox_localidad();
             this.localidadesTableAdapter = new Menú_de_ejemplo.combox_localidadTableAdapters.localidadesTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).BeginInit();
+            this.botonCerrarVuelosDestinos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.localidadesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonConfirmarRegistroAeropuerto
@@ -100,19 +101,30 @@
             this.comboBoxLocalidad.TabIndex = 2;
             this.comboBoxLocalidad.ValueMember = "id_localidad";
             // 
-            // combox_localidad
-            // 
-            this.combox_localidad.DataSetName = "combox_localidad";
-            this.combox_localidad.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // localidadesBindingSource
             // 
             this.localidadesBindingSource.DataMember = "localidades";
             this.localidadesBindingSource.DataSource = this.combox_localidad;
             // 
+            // combox_localidad
+            // 
+            this.combox_localidad.DataSetName = "combox_localidad";
+            this.combox_localidad.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // localidadesTableAdapter
             // 
             this.localidadesTableAdapter.ClearBeforeFill = true;
+            // 
+            // botonCerrarVuelosDestinos
+            // 
+            this.botonCerrarVuelosDestinos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonCerrarVuelosDestinos.BackgroundImage")));
+            this.botonCerrarVuelosDestinos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonCerrarVuelosDestinos.Location = new System.Drawing.Point(366, 12);
+            this.botonCerrarVuelosDestinos.Name = "botonCerrarVuelosDestinos";
+            this.botonCerrarVuelosDestinos.Size = new System.Drawing.Size(50, 35);
+            this.botonCerrarVuelosDestinos.TabIndex = 12;
+            this.botonCerrarVuelosDestinos.UseVisualStyleBackColor = true;
+            this.botonCerrarVuelosDestinos.Click += new System.EventHandler(this.botonCerrarVuelosDestinos_Click);
             // 
             // RegistrarAeropuerto
             // 
@@ -120,6 +132,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(428, 338);
+            this.Controls.Add(this.botonCerrarVuelosDestinos);
             this.Controls.Add(this.comboBoxLocalidad);
             this.Controls.Add(this.textBoxNombreAeropuerto);
             this.Controls.Add(this.linkLabelRegistrarLocalidad);
@@ -130,8 +143,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistrarAeropuerto";
             this.Load += new System.EventHandler(this.RegistrarAeropuerto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.localidadesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,5 +160,6 @@
         private combox_localidad combox_localidad;
         private System.Windows.Forms.BindingSource localidadesBindingSource;
         private combox_localidadTableAdapters.localidadesTableAdapter localidadesTableAdapter;
+        private System.Windows.Forms.Button botonCerrarVuelosDestinos;
     }
 }

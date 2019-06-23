@@ -12,9 +12,20 @@ namespace Menú_de_ejemplo.Formularios
 {
     public partial class formCodigoReserva : Form
     {
-        public formCodigoReserva()
+        public formCodigoReserva(int codigo)
         {
             InitializeComponent();
+            lblcodigo.Text = ""+codigo;
+        }
+
+        private void formCodigoReserva_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

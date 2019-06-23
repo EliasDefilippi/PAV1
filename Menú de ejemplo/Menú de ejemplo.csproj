@@ -67,12 +67,6 @@
     <Compile Include="Formularios\buscarVuelosYdestinos.Designer.cs">
       <DependentUpon>buscarVuelosYdestinos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\buscarVuelosYdestinosSoloIDA.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\buscarVuelosYdestinosSoloIDA.Designer.cs">
-      <DependentUpon>buscarVuelosYdestinosSoloIDA.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\CrearTarifa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,24 +108,6 @@
     </Compile>
     <Compile Include="Formularios\formCodigoReserva.Designer.cs">
       <DependentUpon>formCodigoReserva.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\formRegistrarReservaDatosAcompañante.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\formRegistrarReservaDatosAcompañante.Designer.cs">
-      <DependentUpon>formRegistrarReservaDatosAcompañante.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\formRegistrarReservaDatosTitular.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\formRegistrarReservaDatosTitular.Designer.cs">
-      <DependentUpon>formRegistrarReservaDatosTitular.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\formVuelosIdaDisponibles.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\formVuelosIdaDisponibles.Designer.cs">
-      <DependentUpon>formVuelosIdaDisponibles.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\formSeleccionAsientos.cs">
       <SubType>Form</SubType>
@@ -229,9 +205,6 @@
     <EmbeddedResource Include="Formularios\buscarVuelosYdestinos.resx">
       <DependentUpon>buscarVuelosYdestinos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\buscarVuelosYdestinosSoloIDA.resx">
-      <DependentUpon>buscarVuelosYdestinosSoloIDA.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CrearTarifa.resx">
       <DependentUpon>CrearTarifa.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,15 +225,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formCodigoReserva.resx">
       <DependentUpon>formCodigoReserva.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\formRegistrarReservaDatosAcompañante.resx">
-      <DependentUpon>formRegistrarReservaDatosAcompañante.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\formRegistrarReservaDatosTitular.resx">
-      <DependentUpon>formRegistrarReservaDatosTitular.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\formVuelosIdaDisponibles.resx">
-      <DependentUpon>formVuelosIdaDisponibles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formSeleccionAsientos.resx">
       <DependentUpon>formSeleccionAsientos.cs</DependentUpon>

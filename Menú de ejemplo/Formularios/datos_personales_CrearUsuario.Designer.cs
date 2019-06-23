@@ -50,6 +50,7 @@
             this.textBoxNumeroTelefono = new Mi_Liberia_LF.Error_txtBox();
             this.textBoxCodigoPais = new Mi_Liberia_LF.Error_txtBox();
             this.textBoxNumeroDocumento = new System.Windows.Forms.TextBox();
+            this.botonCerrarVuelosDestinos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.paisesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.localidades)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipodocumentoBindingSource)).BeginInit();
@@ -274,11 +275,23 @@
             this.textBoxNumeroDocumento.Size = new System.Drawing.Size(324, 31);
             this.textBoxNumeroDocumento.TabIndex = 10;
             // 
+            // botonCerrarVuelosDestinos
+            // 
+            this.botonCerrarVuelosDestinos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonCerrarVuelosDestinos.BackgroundImage")));
+            this.botonCerrarVuelosDestinos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonCerrarVuelosDestinos.Location = new System.Drawing.Point(817, 12);
+            this.botonCerrarVuelosDestinos.Name = "botonCerrarVuelosDestinos";
+            this.botonCerrarVuelosDestinos.Size = new System.Drawing.Size(50, 35);
+            this.botonCerrarVuelosDestinos.TabIndex = 13;
+            this.botonCerrarVuelosDestinos.UseVisualStyleBackColor = true;
+            this.botonCerrarVuelosDestinos.Click += new System.EventHandler(this.botonCerrarVuelosDestinos_Click);
+            // 
             // datos_personales_CrearUsuario
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(918, 541);
+            this.Controls.Add(this.botonCerrarVuelosDestinos);
             this.Controls.Add(this.textBoxNumeroDocumento);
             this.Controls.Add(this.textBoxCodigoPais);
             this.Controls.Add(this.textBoxNumeroTelefono);
@@ -329,5 +342,6 @@
         private Mi_Liberia_LF.Error_txtBox textBoxApellido;
         private Mi_Liberia_LF.Error_txtBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxNumeroDocumento;
+        private System.Windows.Forms.Button botonCerrarVuelosDestinos;
     }
 }
