@@ -91,6 +91,10 @@ namespace Menú_de_ejemplo
             chauAeropuerto.Show();
         }
 
-       
+        private void btn_rep_Click(object sender, EventArgs e)
+        {
+            Formularios.Frm_reportes rp = new Formularios.Frm_reportes();
+            rp.Show();
+        }
     }
 }

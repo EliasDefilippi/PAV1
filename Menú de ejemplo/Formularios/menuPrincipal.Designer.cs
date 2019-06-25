@@ -44,6 +44,7 @@
             this.buttonCrearTarifa = new System.Windows.Forms.Button();
             this.buttonEliminarAeropuerto = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_rep = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -161,7 +162,7 @@
             this.buttonInscribete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonInscribete.BackgroundImage")));
             this.buttonInscribete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonInscribete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInscribete.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInscribete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonInscribete.Location = new System.Drawing.Point(36, 259);
             this.buttonInscribete.Name = "buttonInscribete";
             this.buttonInscribete.Size = new System.Drawing.Size(165, 50);
@@ -173,7 +174,7 @@
             // buttonRegistrarAeropuerto
             // 
             this.buttonRegistrarAeropuerto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRegistrarAeropuerto.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRegistrarAeropuerto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRegistrarAeropuerto.Image = ((System.Drawing.Image)(resources.GetObject("buttonRegistrarAeropuerto.Image")));
             this.buttonRegistrarAeropuerto.Location = new System.Drawing.Point(36, 427);
             this.buttonRegistrarAeropuerto.Name = "buttonRegistrarAeropuerto";
@@ -187,7 +188,7 @@
             // 
             this.buttonCrearVuelo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCrearVuelo.BackgroundImage")));
             this.buttonCrearVuelo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCrearVuelo.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCrearVuelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCrearVuelo.Location = new System.Drawing.Point(36, 484);
             this.buttonCrearVuelo.Name = "buttonCrearVuelo";
             this.buttonCrearVuelo.Size = new System.Drawing.Size(165, 50);
@@ -200,7 +201,7 @@
             // 
             this.buttonCrearTarifa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCrearTarifa.BackgroundImage")));
             this.buttonCrearTarifa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCrearTarifa.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCrearTarifa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCrearTarifa.Location = new System.Drawing.Point(36, 541);
             this.buttonCrearTarifa.Name = "buttonCrearTarifa";
             this.buttonCrearTarifa.Size = new System.Drawing.Size(165, 50);
@@ -213,7 +214,7 @@
             // 
             this.buttonEliminarAeropuerto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonEliminarAeropuerto.BackgroundImage")));
             this.buttonEliminarAeropuerto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEliminarAeropuerto.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEliminarAeropuerto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEliminarAeropuerto.Location = new System.Drawing.Point(36, 597);
             this.buttonEliminarAeropuerto.Name = "buttonEliminarAeropuerto";
             this.buttonEliminarAeropuerto.Size = new System.Drawing.Size(165, 50);
@@ -232,12 +233,26 @@
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
+            // btn_rep
+            // 
+            this.btn_rep.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_rep.BackgroundImage")));
+            this.btn_rep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_rep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_rep.Location = new System.Drawing.Point(36, 653);
+            this.btn_rep.Name = "btn_rep";
+            this.btn_rep.Size = new System.Drawing.Size(165, 50);
+            this.btn_rep.TabIndex = 17;
+            this.btn_rep.Text = "Reportes";
+            this.btn_rep.UseVisualStyleBackColor = true;
+            this.btn_rep.Click += new System.EventHandler(this.btn_rep_Click);
+            // 
             // menuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1368, 788);
+            this.ClientSize = new System.Drawing.Size(1368, 780);
+            this.Controls.Add(this.btn_rep);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.buttonEliminarAeropuerto);
             this.Controls.Add(this.buttonCrearTarifa);
@@ -280,6 +295,7 @@
         private System.Windows.Forms.Button buttonCrearTarifa;
         private System.Windows.Forms.Button buttonEliminarAeropuerto;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btn_rep;
     }
 }
 

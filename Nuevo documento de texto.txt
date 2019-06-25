@@ -1,0 +1,84 @@
+create procedure promedioGananciaPorReservaDuranteElAñoXyMesX
+
+@year int, @mes int
+ 
+as
+
+SELECT avg(r.costo_total) as "Promedio"
+FROM dbo.reservas r
+where year(r.fecha_reserva) = @year
+and month(r.fecha_reserva) = @mes
+
+create procedure gananciaGanadaPorReservaDuranteElAñoXyMesX
+
+@year int, @mes int
+ 
+as
+
+SELECT sum(r.costo_total) as "Ganancia"
+FROM dbo.reservas r
+where year(r.fecha_reserva) = @year
+and month(r.fecha_reserva) = @mes
+
+
+create procedure gananciaGanadaPorReservaDuranteElAño
+
+@year int
+
+ as 
+
+SELECT sum(r.costo_total) as "Ganancia"
+FROM dbo.reservas r
+where year(r.fecha_reserva) = @year
+
+create procedure costoTotalPromedioDeReservasDuranteElAño
+
+@year int
+
+ as 
+
+SELECT avg(r.costo_total) as "Promedio"
+FROM dbo.reservas r
+where year(r.fecha_reserva) = @year
+
+create procedure pasajerosConMenorCantidadDeMillasQue
+
+@cantidad int 
+
+as 
+
+SELECT p.apellido as "Apellido", p.nombre as "Nombre", p.cantidad_millas as "Millas"
+FROM dbo.pasajero p
+where p.cantidad_millas < @cantidad
+
+create procedure reservasPorMes
+
+@mes int
+
+ as (
+
+select count(*)) as "Cantidad"
+from dbo.reservas r
+where month(r.fecha_reserva) = @mes
+
+create procedure 
+
+@cod
+
+as
+
+SELECT 
+     numero_documento_titular,
+     fecha_reserva,
+     fecha_salida 
+     ,costo_total,costo_unitario ,
+ asientos.fila,asientos.letra,aeropuertos.nombre_aeropuerto,a.nombre_aeropuerto 
+FROM [LAFAST_gestor_de_reservas].[dbo].[reservas] 
+ join [LAFAST_gestor_de_reservas].[dbo].detalle_reserva 
+ on reservas.id_reserva = detalle_reserva.id_reserva 
+ join [LAFAST_gestor_de_reservas].[dbo].asientos on asientos.id_asiento=detalle_reserva.id_asiento join 
+ [LAFAST_gestor_de_reservas].[dbo].aeropuertos on detalle_reserva.id_aeropuerto_origen = aeropuertos.id_aeropuerto 
+ join 
+ [LAFAST_gestor_de_reservas].[dbo].aeropuertos a on detalle_reserva.id_aeropuerto_destino = a.id_aeropuerto
+  where codigo = @cod
+ order by fecha_salida;
