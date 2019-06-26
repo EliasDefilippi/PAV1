@@ -29,31 +29,39 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource7 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource8 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource9 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource10 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource11 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource12 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource7 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_reportes));
+            this.codigoRecervaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dSNuevo = new Menú_de_ejemplo.DSNuevo();
+            this.pasajerosConMenorCantidadDeMillasQueBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gananciaGanadaPorReservaDuranteElAñoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.costoTotalPromedioDeReservasDuranteElAñoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reservasPorMesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aeropuertos = new Menú_de_ejemplo.aeropuertos();
             this.aeropuertosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aeropuertosTableAdapter = new Menú_de_ejemplo.aeropuertosTableAdapters.aeropuertosTableAdapter();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_filtrar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.reportViewer3 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.reportViewer3 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.reportViewer4 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label4 = new System.Windows.Forms.Label();
@@ -64,19 +72,20 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.codigoRecervaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dSNuevo = new Menú_de_ejemplo.DSNuevo();
-            this.pasajerosConMenorCantidadDeMillasQueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gananciaGanadaPorReservaDuranteElAñoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.costoTotalPromedioDeReservasDuranteElAñoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.reservasPorMesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.codigoRecervaTableAdapter = new Menú_de_ejemplo.DSNuevoTableAdapters.CodigoRecervaTableAdapter();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.reportViewer6 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.codigoRecervaTableAdapter = new Menú_de_ejemplo.DSNuevoTableAdapters.CodigoRecervaTableAdapter();
+            this.buttonCerrar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.codigoRecervaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSNuevo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pasajerosConMenorCantidadDeMillasQueBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gananciaGanadaPorReservaDuranteElAñoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.costoTotalPromedioDeReservasDuranteElAñoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservasPorMesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aeropuertos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aeropuertosBindingSource)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -85,15 +94,43 @@
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.codigoRecervaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSNuevo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pasajerosConMenorCantidadDeMillasQueBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gananciaGanadaPorReservaDuranteElAñoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.costoTotalPromedioDeReservasDuranteElAñoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reservasPorMesBindingSource)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // codigoRecervaBindingSource
+            // 
+            this.codigoRecervaBindingSource.DataMember = "CodigoRecerva";
+            this.codigoRecervaBindingSource.DataSource = this.dSNuevo;
+            // 
+            // dSNuevo
+            // 
+            this.dSNuevo.DataSetName = "DSNuevo";
+            this.dSNuevo.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pasajerosConMenorCantidadDeMillasQueBindingSource
+            // 
+            this.pasajerosConMenorCantidadDeMillasQueBindingSource.DataMember = "pasajerosConMenorCantidadDeMillasQue";
+            this.pasajerosConMenorCantidadDeMillasQueBindingSource.DataSource = this.dSNuevo;
+            // 
+            // gananciaGanadaPorReservaDuranteElAñoBindingSource
+            // 
+            this.gananciaGanadaPorReservaDuranteElAñoBindingSource.DataMember = "gananciaGanadaPorReservaDuranteElAño";
+            this.gananciaGanadaPorReservaDuranteElAñoBindingSource.DataSource = this.dSNuevo;
+            // 
+            // costoTotalPromedioDeReservasDuranteElAñoBindingSource
+            // 
+            this.costoTotalPromedioDeReservasDuranteElAñoBindingSource.DataMember = "costoTotalPromedioDeReservasDuranteElAño";
+            this.costoTotalPromedioDeReservasDuranteElAñoBindingSource.DataSource = this.dSNuevo;
+            // 
+            // listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource
+            // 
+            this.listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource.DataMember = "listadoDeAeropuertosYlocalidadDestinoPorPais";
+            this.listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource.DataSource = this.dSNuevo;
+            // 
+            // reservasPorMesBindingSource
+            // 
+            this.reservasPorMesBindingSource.DataMember = "reservasPorMes";
+            this.reservasPorMesBindingSource.DataSource = this.dSNuevo;
             // 
             // aeropuertos
             // 
@@ -117,10 +154,10 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Location = new System.Drawing.Point(12, 35);
+            this.tabControl1.Location = new System.Drawing.Point(3, 49);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(727, 476);
+            this.tabControl1.Size = new System.Drawing.Size(773, 499);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -132,30 +169,26 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(719, 450);
+            this.tabPage1.Size = new System.Drawing.Size(765, 473);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Datos de recerva";
+            this.tabPage1.Text = "Datos de reserva";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // tabPage2
+            // label1
             // 
-            this.tabPage2.Controls.Add(this.reportViewer1);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(719, 450);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Pasajero con menor cantidad de millas";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(11, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Ingrese su codigo de reserva:";
             // 
             // reportViewer2
             // 
-            reportDataSource8.Name = "DataSet1";
-            reportDataSource8.Value = this.codigoRecervaBindingSource;
-            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource8);
+            reportDataSource7.Name = "DataSet1";
+            reportDataSource7.Value = this.codigoRecervaBindingSource;
+            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource7);
             this.reportViewer2.LocalReport.ReportEmbeddedResource = "Menú_de_ejemplo.Report1_cod_res.rdlc";
             this.reportViewer2.Location = new System.Drawing.Point(0, 46);
             this.reportViewer2.Name = "reportViewer2";
@@ -179,14 +212,30 @@
             this.btn_filtrar.UseVisualStyleBackColor = true;
             this.btn_filtrar.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // label1
+            // tabPage2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Ingrese su codigo de recerva:";
+            this.tabPage2.Controls.Add(this.reportViewer1);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(765, 473);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Pasajero con menor cantidad de millas";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // reportViewer1
+            // 
+            reportDataSource8.Name = "DataSet1";
+            reportDataSource8.Value = this.pasajerosConMenorCantidadDeMillasQueBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource8);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Menú_de_ejemplo.Reporte_pasajero_millas.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(6, 47);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(710, 383);
+            this.reportViewer1.TabIndex = 12;
             // 
             // label2
             // 
@@ -214,17 +263,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // reportViewer1
-            // 
-            reportDataSource9.Name = "DataSet1";
-            reportDataSource9.Value = this.pasajerosConMenorCantidadDeMillasQueBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource9);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Menú_de_ejemplo.Reporte_pasajero_millas.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(6, 61);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(710, 383);
-            this.reportViewer1.TabIndex = 12;
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.reportViewer3);
@@ -234,10 +272,21 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(719, 450);
+            this.tabPage3.Size = new System.Drawing.Size(765, 473);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Granacia por recerva";
+            this.tabPage3.Text = "Ganancias por Reservas";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // reportViewer3
+            // 
+            reportDataSource9.Name = "DataSet1";
+            reportDataSource9.Value = this.gananciaGanadaPorReservaDuranteElAñoBindingSource;
+            this.reportViewer3.LocalReport.DataSources.Add(reportDataSource9);
+            this.reportViewer3.LocalReport.ReportEmbeddedResource = "Menú_de_ejemplo.Reporte_ganacia_por_recerva.rdlc";
+            this.reportViewer3.Location = new System.Drawing.Point(0, 59);
+            this.reportViewer3.Name = "reportViewer3";
+            this.reportViewer3.Size = new System.Drawing.Size(716, 391);
+            this.reportViewer3.TabIndex = 15;
             // 
             // label3
             // 
@@ -265,17 +314,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_2);
             // 
-            // reportViewer3
-            // 
-            reportDataSource10.Name = "DataSet1";
-            reportDataSource10.Value = this.gananciaGanadaPorReservaDuranteElAñoBindingSource;
-            this.reportViewer3.LocalReport.DataSources.Add(reportDataSource10);
-            this.reportViewer3.LocalReport.ReportEmbeddedResource = "Menú_de_ejemplo.Reporte_ganacia_por_recerva.rdlc";
-            this.reportViewer3.Location = new System.Drawing.Point(0, 59);
-            this.reportViewer3.Name = "reportViewer3";
-            this.reportViewer3.Size = new System.Drawing.Size(716, 391);
-            this.reportViewer3.TabIndex = 15;
-            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.reportViewer4);
@@ -285,16 +323,16 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(719, 450);
+            this.tabPage4.Size = new System.Drawing.Size(765, 473);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Ganacia poromedio por año";
+            this.tabPage4.Text = "Ganacia Promedio Por Año";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // reportViewer4
             // 
-            reportDataSource11.Name = "DataSet1";
-            reportDataSource11.Value = this.costoTotalPromedioDeReservasDuranteElAñoBindingSource;
-            this.reportViewer4.LocalReport.DataSources.Add(reportDataSource11);
+            reportDataSource10.Name = "DataSet1";
+            reportDataSource10.Value = this.costoTotalPromedioDeReservasDuranteElAñoBindingSource;
+            this.reportViewer4.LocalReport.DataSources.Add(reportDataSource10);
             this.reportViewer4.LocalReport.ReportEmbeddedResource = "Menú_de_ejemplo.Reporte_ganacia_promedio_por_anio.rdlc";
             this.reportViewer4.Location = new System.Drawing.Point(1, 44);
             this.reportViewer4.Name = "reportViewer4";
@@ -336,20 +374,20 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(719, 450);
+            this.tabPage5.Size = new System.Drawing.Size(765, 473);
             this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Aeropuertos por pais";
+            this.tabPage5.Text = "Aeropuertos por Pais";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // reportViewer5
             // 
-            reportDataSource12.Name = "DataSet1";
-            reportDataSource12.Value = this.listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource;
-            this.reportViewer5.LocalReport.DataSources.Add(reportDataSource12);
+            reportDataSource11.Name = "DataSet1";
+            reportDataSource11.Value = this.listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource;
+            this.reportViewer5.LocalReport.DataSources.Add(reportDataSource11);
             this.reportViewer5.LocalReport.ReportEmbeddedResource = "Menú_de_ejemplo.Report_aeropuertos.rdlc";
             this.reportViewer5.Location = new System.Drawing.Point(1, 44);
             this.reportViewer5.Name = "reportViewer5";
-            this.reportViewer5.Size = new System.Drawing.Size(716, 391);
+            this.reportViewer5.Size = new System.Drawing.Size(758, 391);
             this.reportViewer5.TabIndex = 23;
             // 
             // label5
@@ -378,45 +416,6 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // codigoRecervaBindingSource
-            // 
-            this.codigoRecervaBindingSource.DataMember = "CodigoRecerva";
-            this.codigoRecervaBindingSource.DataSource = this.dSNuevo;
-            // 
-            // dSNuevo
-            // 
-            this.dSNuevo.DataSetName = "DSNuevo";
-            this.dSNuevo.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pasajerosConMenorCantidadDeMillasQueBindingSource
-            // 
-            this.pasajerosConMenorCantidadDeMillasQueBindingSource.DataMember = "pasajerosConMenorCantidadDeMillasQue";
-            this.pasajerosConMenorCantidadDeMillasQueBindingSource.DataSource = this.dSNuevo;
-            // 
-            // gananciaGanadaPorReservaDuranteElAñoBindingSource
-            // 
-            this.gananciaGanadaPorReservaDuranteElAñoBindingSource.DataMember = "gananciaGanadaPorReservaDuranteElAño";
-            this.gananciaGanadaPorReservaDuranteElAñoBindingSource.DataSource = this.dSNuevo;
-            // 
-            // costoTotalPromedioDeReservasDuranteElAñoBindingSource
-            // 
-            this.costoTotalPromedioDeReservasDuranteElAñoBindingSource.DataMember = "costoTotalPromedioDeReservasDuranteElAño";
-            this.costoTotalPromedioDeReservasDuranteElAñoBindingSource.DataSource = this.dSNuevo;
-            // 
-            // listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource
-            // 
-            this.listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource.DataMember = "listadoDeAeropuertosYlocalidadDestinoPorPais";
-            this.listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource.DataSource = this.dSNuevo;
-            // 
-            // reservasPorMesBindingSource
-            // 
-            this.reservasPorMesBindingSource.DataMember = "reservasPorMes";
-            this.reservasPorMesBindingSource.DataSource = this.dSNuevo;
-            // 
-            // codigoRecervaTableAdapter
-            // 
-            this.codigoRecervaTableAdapter.ClearBeforeFill = true;
-            // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.reportViewer6);
@@ -426,20 +425,20 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(719, 450);
+            this.tabPage6.Size = new System.Drawing.Size(765, 473);
             this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Cntidad de recervas por mes";
+            this.tabPage6.Text = "Cantidad de Reservas por Mes";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // reportViewer6
             // 
-            reportDataSource7.Name = "DataSet1";
-            reportDataSource7.Value = this.reservasPorMesBindingSource;
-            this.reportViewer6.LocalReport.DataSources.Add(reportDataSource7);
+            reportDataSource12.Name = "DataSet1";
+            reportDataSource12.Value = this.reservasPorMesBindingSource;
+            this.reportViewer6.LocalReport.DataSources.Add(reportDataSource12);
             this.reportViewer6.LocalReport.ReportEmbeddedResource = "Menú_de_ejemplo.Reporte_cantidad_de_recervas_mes.rdlc";
-            this.reportViewer6.Location = new System.Drawing.Point(1, 44);
+            this.reportViewer6.Location = new System.Drawing.Point(4, 44);
             this.reportViewer6.Name = "reportViewer6";
-            this.reportViewer6.Size = new System.Drawing.Size(716, 391);
+            this.reportViewer6.Size = new System.Drawing.Size(758, 391);
             this.reportViewer6.TabIndex = 27;
             // 
             // label6
@@ -468,16 +467,41 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // codigoRecervaTableAdapter
+            // 
+            this.codigoRecervaTableAdapter.ClearBeforeFill = true;
+            // 
+            // buttonCerrar
+            // 
+            this.buttonCerrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCerrar.BackgroundImage")));
+            this.buttonCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCerrar.Location = new System.Drawing.Point(725, 8);
+            this.buttonCerrar.Name = "buttonCerrar";
+            this.buttonCerrar.Size = new System.Drawing.Size(50, 35);
+            this.buttonCerrar.TabIndex = 5;
+            this.buttonCerrar.UseVisualStyleBackColor = true;
+            this.buttonCerrar.Click += new System.EventHandler(this.buttonCerrar_Click);
+            // 
             // Frm_reportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 514);
+            this.ClientSize = new System.Drawing.Size(780, 561);
+            this.Controls.Add(this.buttonCerrar);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_reportes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_reportes";
             this.Load += new System.EventHandler(this.Frm_reportes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.codigoRecervaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSNuevo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pasajerosConMenorCantidadDeMillasQueBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gananciaGanadaPorReservaDuranteElAñoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.costoTotalPromedioDeReservasDuranteElAñoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservasPorMesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aeropuertos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aeropuertosBindingSource)).EndInit();
             this.tabControl1.ResumeLayout(false);
@@ -491,13 +515,6 @@
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.codigoRecervaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSNuevo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pasajerosConMenorCantidadDeMillasQueBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gananciaGanadaPorReservaDuranteElAñoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.costoTotalPromedioDeReservasDuranteElAñoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reservasPorMesBindingSource)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             this.ResumeLayout(false);
@@ -547,5 +564,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonCerrar;
     }
 }

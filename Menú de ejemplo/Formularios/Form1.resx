@@ -117,53 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="codigoRecervaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>118, 56</value>
+  <metadata name="lAFASTgestordereservasDataSet3BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>264, 17</value>
   </metadata>
-  <metadata name="dSNuevo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <metadata name="dSNuevo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <metadata name="pasajerosConMenorCantidadDeMillasQueBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>534, 56</value>
-  </metadata>
-  <metadata name="gananciaGanadaPorReservaDuranteElAñoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 95</value>
-  </metadata>
-  <metadata name="costoTotalPromedioDeReservasDuranteElAñoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>374, 95</value>
-  </metadata>
-  <metadata name="listadoDeAeropuertosYlocalidadDestinoPorPaisBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 134</value>
-  </metadata>
-  <metadata name="reservasPorMesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>752, 95</value>
-  </metadata>
-  <metadata name="aeropuertos.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="lAFAST_gestor_de_reservasDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="aeropuertosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>134, 17</value>
+  <metadata name="vuelosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>574, 17</value>
   </metadata>
-  <metadata name="aeropuertosTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>330, 17</value>
+  <metadata name="vuelosTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>739, 17</value>
   </metadata>
-  <metadata name="codigoRecervaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>329, 56</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="buttonCerrar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAjCAIAAABZ187YAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAWhJREFUWEftVTtqQzEQdOfOh0iVU6TyKVL4ToEcw5ATuHNhQzrfICRFupTuXgZW
-        Fo/VZ2clJ6h4w2Ae72nk2dGyWh3WmwG52PJwseWhw9bleXf9/MKvek8SwmmaSDlr63v/hk0FeFZfTXrl
-        tq33py1CClvewMcmGQfZDabcsPXx8hp2ygFf1XrFeUgpKvKirWxIKbAGK5UW7JTnbdVDSqHq7pSDeVuo
-        4Od0DiIOWA/V8eGRCWkOrIdKGaj1lrfoBqQ5CY2WJ1ukAaWuEhq2hHePzRxdlC0wO34agE2YgcfaEtbn
-        kAlmvgt9tkDUGv7EAzKkyBZbbaf5h7aGO8TmkBTu2fKdIaUoTdFIw9aI43S4y6f5xkUAbXe8MpC35c1J
-        Fd0pB4uHSHZVqUU65UbL1+s251BdnoYUadgCsxMLb8ipXZJnQ4q0bQnno4sf1pFeOWsLRN3YlAwppcRG
-        yh22/pOLLQ+HtLXe/AIDEZmViEAk6AAAAABJRU5ErkJggg==
-</value>
-  </data>
 </root>

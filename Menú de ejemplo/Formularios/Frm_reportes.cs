@@ -108,5 +108,15 @@ namespace Menú_de_ejemplo.Formularios
 
             this.reportViewer6.RefreshReport();
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
