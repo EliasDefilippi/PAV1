@@ -14,8 +14,8 @@ namespace Mi_Liberia_LF
 
         public static DataSet Ejecutar(string cmd)
         {
-
-            SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-ELESRDJ;Initial Catalog=LAFAST_gestor_de_reservas;Integrated Security=True");
+            SqlConnection conexion = new SqlConnection("Data Source=USUARIO;Initial Catalog=LAFAST_gestor_de_reservas;Integrated Security=True");
+            //SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-ELESRDJ;Initial Catalog=LAFAST_gestor_de_reservas;Integrated Security=True");
             conexion.Open();
 
             DataSet DS = new DataSet();

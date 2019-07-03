@@ -31,9 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menuPrincipal));
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.buttonVuelosYdestinos = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.buttonCrearTramo = new System.Windows.Forms.Button();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.botonCerrarInicio = new System.Windows.Forms.Button();
@@ -65,20 +63,6 @@
             this.buttonVuelosYdestinos.UseVisualStyleBackColor = false;
             this.buttonVuelosYdestinos.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(36, 147);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 50);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Administra tu viaje";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -89,20 +73,6 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
-            // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(36, 371);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(165, 50);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Información para tu viaje";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // buttonCrearTramo
             // 
             this.buttonCrearTramo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCrearTramo.BackgroundImage")));
@@ -110,7 +80,7 @@
             this.buttonCrearTramo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCrearTramo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCrearTramo.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonCrearTramo.Location = new System.Drawing.Point(36, 315);
+            this.buttonCrearTramo.Location = new System.Drawing.Point(36, 259);
             this.buttonCrearTramo.Name = "buttonCrearTramo";
             this.buttonCrearTramo.Size = new System.Drawing.Size(165, 50);
             this.buttonCrearTramo.TabIndex = 6;
@@ -125,7 +95,7 @@
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(36, 203);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(36, 147);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(165, 50);
             this.btnIniciarSesion.TabIndex = 7;
@@ -163,7 +133,7 @@
             this.buttonInscribete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonInscribete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInscribete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInscribete.Location = new System.Drawing.Point(36, 259);
+            this.buttonInscribete.Location = new System.Drawing.Point(36, 203);
             this.buttonInscribete.Name = "buttonInscribete";
             this.buttonInscribete.Size = new System.Drawing.Size(165, 50);
             this.buttonInscribete.TabIndex = 11;
@@ -176,7 +146,7 @@
             this.buttonRegistrarAeropuerto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRegistrarAeropuerto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRegistrarAeropuerto.Image = ((System.Drawing.Image)(resources.GetObject("buttonRegistrarAeropuerto.Image")));
-            this.buttonRegistrarAeropuerto.Location = new System.Drawing.Point(36, 427);
+            this.buttonRegistrarAeropuerto.Location = new System.Drawing.Point(36, 315);
             this.buttonRegistrarAeropuerto.Name = "buttonRegistrarAeropuerto";
             this.buttonRegistrarAeropuerto.Size = new System.Drawing.Size(165, 50);
             this.buttonRegistrarAeropuerto.TabIndex = 12;
@@ -189,7 +159,7 @@
             this.buttonCrearVuelo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCrearVuelo.BackgroundImage")));
             this.buttonCrearVuelo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCrearVuelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCrearVuelo.Location = new System.Drawing.Point(36, 484);
+            this.buttonCrearVuelo.Location = new System.Drawing.Point(36, 372);
             this.buttonCrearVuelo.Name = "buttonCrearVuelo";
             this.buttonCrearVuelo.Size = new System.Drawing.Size(165, 50);
             this.buttonCrearVuelo.TabIndex = 13;
@@ -202,7 +172,7 @@
             this.buttonCrearTarifa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCrearTarifa.BackgroundImage")));
             this.buttonCrearTarifa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCrearTarifa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCrearTarifa.Location = new System.Drawing.Point(36, 541);
+            this.buttonCrearTarifa.Location = new System.Drawing.Point(36, 429);
             this.buttonCrearTarifa.Name = "buttonCrearTarifa";
             this.buttonCrearTarifa.Size = new System.Drawing.Size(165, 50);
             this.buttonCrearTarifa.TabIndex = 14;
@@ -215,7 +185,7 @@
             this.buttonEliminarAeropuerto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonEliminarAeropuerto.BackgroundImage")));
             this.buttonEliminarAeropuerto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEliminarAeropuerto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEliminarAeropuerto.Location = new System.Drawing.Point(36, 597);
+            this.buttonEliminarAeropuerto.Location = new System.Drawing.Point(36, 485);
             this.buttonEliminarAeropuerto.Name = "buttonEliminarAeropuerto";
             this.buttonEliminarAeropuerto.Size = new System.Drawing.Size(165, 50);
             this.buttonEliminarAeropuerto.TabIndex = 15;
@@ -238,11 +208,11 @@
             this.btn_rep.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_rep.BackgroundImage")));
             this.btn_rep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_rep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_rep.Location = new System.Drawing.Point(36, 653);
+            this.btn_rep.Location = new System.Drawing.Point(36, 541);
             this.btn_rep.Name = "btn_rep";
             this.btn_rep.Size = new System.Drawing.Size(165, 50);
             this.btn_rep.TabIndex = 17;
-            this.btn_rep.Text = "Reportes";
+            this.btn_rep.Text = "Reportes - Estadísticas";
             this.btn_rep.UseVisualStyleBackColor = true;
             this.btn_rep.Click += new System.EventHandler(this.btn_rep_Click);
             // 
@@ -263,9 +233,7 @@
             this.Controls.Add(this.botonCerrarInicio);
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.buttonCrearTramo);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonVuelosYdestinos);
             this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -282,9 +250,7 @@
 
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Button buttonVuelosYdestinos;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button buttonCrearTramo;
         private System.Windows.Forms.Button btnIniciarSesion;
         private System.Windows.Forms.Button botonCerrarInicio;

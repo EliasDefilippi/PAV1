@@ -132,17 +132,6 @@
         pX2U2/C69U7v8b7v9R7wdW68AXe03QS+b9l9AbLAlNpOrhwkAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAKUAAAAyCAYAAAA9SBshAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxMAAAsTAQCanBgAAAEeSURBVHhe7d1LasMwGIVRbcD7
-        31QplL7fXUnTXyEGYQRpadrcwRmciSTQ5EN4YFvtYll2l+WqXJebclvuyv3Gw8HjwVN5Li/lrbyXD/il
-        1kPswW0je53o4Y16hKPZBvBTrYc4nnTHQpuNwSm1McbZAvhvbTYI5yRK4oiSOKIkjiiJI0riiJI4oiSO
-        KIkjSuKIkjiiJI4oiSNK4oiSOKLkL31Oxo4SJXFESZzmUwjSOCmJI0riiJI4oiSOKIkjSuKIkjiiJI4o
-        iSNK4oiSOKIkjiiJs39LaDYB5yJK4oiSOJ4piSNK4oiSOKIkjiiJI0riiJI4oiSOKIlzNMr1Dxqr2Ro4
-        pX2U2/C69U7v8b7v9R7wdW68AXe03QS+b9l9AbLAlNpOrhwkAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAK0AAAA/CAYAAACSAUgLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -200,17 +189,6 @@
         CpjTah/vdONyt5Uxznmtq2l23HJiWdGyGPk7ozKGL+S5U3dQzw7fwHITfh0AOkYTt3PKeuDFpymjM3MH
         6Rxg+IIaNXi9eCgWtXMHOjWaeAY6NZp4Bjo1mngGOjWaeAY6NZp4Bjo1mngGOjWaeAY6NZp4Bjo1mngG
         OjWaeAY6NZp4Bjo1mnilLf0f87HMLrQHUBAAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAKUAAAAyCAYAAAA9SBshAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxMAAAsTAQCanBgAAAEeSURBVHhe7d1LasMwGIVRbcD7
-        31QplL7fXUnTXyEGYQRpadrcwRmciSTQ5EN4YFvtYll2l+WqXJebclvuyv3Gw8HjwVN5Li/lrbyXD/il
-        1kPswW0je53o4Y16hKPZBvBTrYc4nnTHQpuNwSm1McbZAvhvbTYI5yRK4oiSOKIkjiiJI0riiJI4oiSO
-        KIkjSuKIkjiiJI4oiSNK4oiSOKLkL31Oxo4SJXFESZzmUwjSOCmJI0riiJI4oiSOKIkjSuKIkjiiJI4o
-        iSNK4oiSOKIkjiiJs39LaDYB5yJK4oiSOJ4piSNK4oiSOKIkjiiJI0riiJI4oiSOKIlzNMr1Dxqr2Ro4
-        pX2U2/C69U7v8b7v9R7wdW68AXe03QS+b9l9AbLAlNpOrhwkAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="buttonCrearTramo.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>travel_journey-15_icon-icons.com_56001.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
@@ -287,10 +290,14 @@
     </Compile>
     <EmbeddedResource Include="Report1_cod_res.rdlc" />
     <EmbeddedResource Include="Reporte_cantidad_de_recervas_mes.rdlc" />
+    <EmbeddedResource Include="Reporte_ganacia_por_mes_de_anio.rdlc" />
     <EmbeddedResource Include="Reporte_ganacia_por_recerva.rdlc" />
     <EmbeddedResource Include="Reporte_ganacia_promedio_por_anio.rdlc" />
+    <EmbeddedResource Include="Reporte_HV_1.rdlc" />
     <EmbeddedResource Include="Reporte_pasajero_millas.rdlc" />
+    <EmbeddedResource Include="Reporte_promedio_de_ganancias_mesames.rdlc" />
     <EmbeddedResource Include="Report_aeropuertos.rdlc" />
+    <EmbeddedResource Include="Report_vuelos_arg.rdlc" />
     <EmbeddedResource Include="Rp1.rdlc" />
     <None Include="aeropuertos.xsc">
       <DependentUpon>aeropuertos.xsd</DependentUpon>
@@ -412,6 +419,9 @@
       <Project>{E9ED6C86-43E4-4A51-9C7D-BDA71DA790A7}</Project>
       <Name>Mi_Liberia_LF</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="travel_journey-15_icon-icons.com_56001.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
