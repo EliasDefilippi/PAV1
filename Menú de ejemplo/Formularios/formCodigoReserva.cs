@@ -10,14 +10,20 @@ using System.Windows.Forms;
 
 namespace Menú_de_ejemplo.Formularios
 {
-    public partial class formVuelosIdaDisponibles : Form
+    public partial class formCodigoReserva : Form
     {
-        public formVuelosIdaDisponibles()
+        public formCodigoReserva(int codigo)
         {
             InitializeComponent();
+            lblcodigo.Text = ""+codigo;
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
+        private void formCodigoReserva_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }

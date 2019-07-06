@@ -38,6 +38,7 @@
             this.aeropuertosDetinos = new Menú_de_ejemplo.aeropuertosDetinos();
             this.aeropuertosDetinosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.paisesTableAdapter = new Menú_de_ejemplo.combox_localidadTableAdapters.paisesTableAdapter();
+            this.botonCerrarVuelosDestinos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.paisesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aeropuertosDetinos)).BeginInit();
@@ -100,12 +101,24 @@
             // 
             this.paisesTableAdapter.ClearBeforeFill = true;
             // 
+            // botonCerrarVuelosDestinos
+            // 
+            this.botonCerrarVuelosDestinos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonCerrarVuelosDestinos.BackgroundImage")));
+            this.botonCerrarVuelosDestinos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonCerrarVuelosDestinos.Location = new System.Drawing.Point(366, 12);
+            this.botonCerrarVuelosDestinos.Name = "botonCerrarVuelosDestinos";
+            this.botonCerrarVuelosDestinos.Size = new System.Drawing.Size(50, 35);
+            this.botonCerrarVuelosDestinos.TabIndex = 12;
+            this.botonCerrarVuelosDestinos.UseVisualStyleBackColor = true;
+            this.botonCerrarVuelosDestinos.Click += new System.EventHandler(this.botonCerrarVuelosDestinos_Click);
+            // 
             // RegistrarLocalidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(428, 325);
+            this.Controls.Add(this.botonCerrarVuelosDestinos);
             this.Controls.Add(this.comboBoxPaises);
             this.Controls.Add(this.textBoxNombreLocalidad);
             this.Controls.Add(this.buttonConfirmarLocalidad);
@@ -133,5 +146,6 @@
         private combox_localidad combox_localidad;
         private System.Windows.Forms.BindingSource paisesBindingSource;
         private combox_localidadTableAdapters.paisesTableAdapter paisesTableAdapter;
+        private System.Windows.Forms.Button botonCerrarVuelosDestinos;
     }
 }

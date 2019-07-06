@@ -40,7 +40,7 @@ namespace Menú_de_ejemplo
            // TODO: esta línea de código carga datos en la tabla 'localidades2.localidades' Puede moverla o quitarla según sea necesario.
             this.localidadesTableAdapter1.Fill(this.localidades2.localidades);
             // TODO: esta línea de código carga datos en la tabla 'combox_localidad.categoria_pasajero' Puede moverla o quitarla según sea necesario.
-
+            comboBoxAdultos.SelectedIndex = 0;
             comboBoxOrigen.SelectedValue = 0;
             comboBoxDestino.SelectedValue = 2;
             this.categoria_pasajeroTableAdapter.Fill(this.combox_localidad.categoria_pasajero);
@@ -52,6 +52,7 @@ namespace Menú_de_ejemplo
 
         private void botonBuscarVuelos_Click(object sender, EventArgs e)
         {
+
 
             Formularios.formVuelosIdaVueltaDisponibles vuelosDisponibles = new Formularios.formVuelosIdaVueltaDisponibles();
             vuelosDisponibles.Show();
@@ -105,6 +106,16 @@ namespace Menú_de_ejemplo
 
             vuelosDisponibles.Show();
             
+
+
+            if (!checkBoxIda.Checked) { 
+            Formularios.formVuelosIdaVueltaDisponibles vuelosDisponibles = new Formularios.formVuelosIdaVueltaDisponibles(dateTimeIDA.Value, int.Parse(comboBoxOrigen.SelectedValue.ToString()), int.Parse(comboBoxDestino.SelectedValue.ToString()), dateTimeVUELTA.Value, checkBoxIda.Checked, int.Parse(comboBoxAdultos.Text));
+
+            vuelosDisponibles.Show();
+            }
+            else { 
+            MessageBox.Show("Por el momento solo se puede reservar pasajes de idea y vuelta..intente mas tarde");
+            }
         }
 
         private void checkBoxIda_CheckedChanged(object sender, EventArgs e)
@@ -118,6 +129,5 @@ namespace Menú_de_ejemplo
                 dateTimeVUELTA.Enabled = true;
             }
         }
->>>>>>> #ultimoElias
     }
 }

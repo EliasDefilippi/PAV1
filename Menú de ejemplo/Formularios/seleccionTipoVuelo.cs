@@ -27,12 +27,7 @@ namespace Menú_de_ejemplo.Formularios
             this.Close();
         }
 
-        private void btonIda_Click(object sender, EventArgs e)
-        {
-            buscarVuelosYdestinosSoloIDA ventanaVuelosIda = new buscarVuelosYdestinosSoloIDA();
-            ventanaVuelosIda.Show();
-            this.Close();
-        }
+        
 
         private void btonVueloIda_Click(object sender, EventArgs e)
         {

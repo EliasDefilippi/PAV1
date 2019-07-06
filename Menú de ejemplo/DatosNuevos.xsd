@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatosNuevos" targetNamespace="http://tempuri.org/DatosNuevos.xsd" xmlns:mstns="http://tempuri.org/DatosNuevos.xsd" xmlns="http://tempuri.org/DatosNuevos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Menú_de_ejemplo.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        vuelos.nro_vuelo, tramos.fecha_salida_vuelo, localidades.nombre_localidad
+FROM            vuelos INNER JOIN
+                         tramos ON vuelos.id_vuelo = tramos.id_vuelo INNER JOIN
+                         aeropuertos ON tramos.id_aeropuerto_destino = aeropuertos.id_aeropuerto INNER JOIN
+                         localidades ON aeropuertos.id_localidad_aeropuerto = localidades.id_localidad</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nro_vuelo" DataSetColumn="nro_vuelo" />
+              <Mapping SourceColumn="fecha_salida_vuelo" DataSetColumn="fecha_salida_vuelo" />
+              <Mapping SourceColumn="nombre_localidad" DataSetColumn="nombre_localidad" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DatosNuevos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DatosNuevos" msprop:Generator_UserDSName="DatosNuevos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nro_vuelo" msprop:Generator_ColumnVarNameInTable="columnnro_vuelo" msprop:Generator_ColumnPropNameInRow="nro_vuelo" msprop:Generator_ColumnPropNameInTable="nro_vueloColumn" msprop:Generator_UserColumnName="nro_vuelo" type="xs:int" />
+              <xs:element name="fecha_salida_vuelo" msprop:Generator_ColumnVarNameInTable="columnfecha_salida_vuelo" msprop:Generator_ColumnPropNameInRow="fecha_salida_vuelo" msprop:Generator_ColumnPropNameInTable="fecha_salida_vueloColumn" msprop:Generator_UserColumnName="fecha_salida_vuelo" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="nombre_localidad" msprop:Generator_ColumnVarNameInTable="columnnombre_localidad" msprop:Generator_ColumnPropNameInRow="nombre_localidad" msprop:Generator_ColumnPropNameInTable="nombre_localidadColumn" msprop:Generator_UserColumnName="nombre_localidad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

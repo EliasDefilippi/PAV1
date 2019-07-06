@@ -32,9 +32,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>travel_journey-15_icon-icons.com_56001.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,17 +67,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>combox_localidad.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DSNuevo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSNuevo.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\buscarVuelosYdestinos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\buscarVuelosYdestinos.Designer.cs">
       <DependentUpon>buscarVuelosYdestinos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\buscarVuelosYdestinosSoloIDA.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\buscarVuelosYdestinosSoloIDA.Designer.cs">
-      <DependentUpon>buscarVuelosYdestinosSoloIDA.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\CrearTarifa.cs">
       <SubType>Form</SubType>
@@ -114,6 +119,11 @@
     </Compile>
     <Compile Include="Formularios\formVuelosIdaDisponibles.Designer.cs">
       <DependentUpon>formVuelosIdaDisponibles.cs</DependentUpon>
+    <Compile Include="Formularios\formCodigoReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formCodigoReserva.Designer.cs">
+      <DependentUpon>formCodigoReserva.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\formSeleccionAsientos.cs">
       <SubType>Form</SubType>
@@ -132,6 +142,12 @@
     </Compile>
     <Compile Include="Formularios\formVuelosIdaVueltaDisponibles.Designer.cs">
       <DependentUpon>formVuelosIdaVueltaDisponibles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_reportes.Designer.cs">
+      <DependentUpon>Frm_reportes.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Login.cs">
       <SubType>Form</SubType>
@@ -205,9 +221,6 @@
     <EmbeddedResource Include="Formularios\buscarVuelosYdestinos.resx">
       <DependentUpon>buscarVuelosYdestinos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\buscarVuelosYdestinosSoloIDA.resx">
-      <DependentUpon>buscarVuelosYdestinosSoloIDA.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CrearTarifa.resx">
       <DependentUpon>CrearTarifa.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +241,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formVuelosIdaDisponibles.resx">
       <DependentUpon>formVuelosIdaDisponibles.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\formCodigoReserva.resx">
+      <DependentUpon>formCodigoReserva.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formSeleccionAsientos.resx">
       <DependentUpon>formSeleccionAsientos.cs</DependentUpon>
@@ -237,6 +252,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formVuelosIdaVueltaDisponibles.resx">
       <DependentUpon>formVuelosIdaVueltaDisponibles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_reportes.resx">
+      <DependentUpon>Frm_reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\mostrarDatosDeVuelo.resx">
+      <DependentUpon>mostrarDatosDeVuelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistrarAeropuerto.resx">
       <DependentUpon>RegistrarAeropuerto.cs</DependentUpon>
@@ -268,6 +289,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Report1_cod_res.rdlc" />
+    <EmbeddedResource Include="Reporte_cantidad_de_recervas_mes.rdlc" />
+    <EmbeddedResource Include="Reporte_ganacia_por_mes_de_anio.rdlc" />
+    <EmbeddedResource Include="Reporte_ganacia_por_recerva.rdlc" />
+    <EmbeddedResource Include="Reporte_ganacia_promedio_por_anio.rdlc" />
+    <EmbeddedResource Include="Reporte_HV_1.rdlc" />
+    <EmbeddedResource Include="Reporte_pasajero_millas.rdlc" />
+    <EmbeddedResource Include="Reporte_promedio_de_ganancias_mesames.rdlc" />
+    <EmbeddedResource Include="Report_aeropuertos.rdlc" />
+    <EmbeddedResource Include="Report_vuelos_arg.rdlc" />
+    <EmbeddedResource Include="Rp1.rdlc" />
     <None Include="aeropuertos.xsc">
       <DependentUpon>aeropuertos.xsd</DependentUpon>
     </None>
@@ -300,6 +332,17 @@
     </None>
     <None Include="combox_localidad.xss">
       <DependentUpon>combox_localidad.xsd</DependentUpon>
+    </None>
+    <None Include="DSNuevo.xsc">
+      <DependentUpon>DSNuevo.xsd</DependentUpon>
+    </None>
+    <None Include="DSNuevo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSNuevo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSNuevo.xss">
+      <DependentUpon>DSNuevo.xsd</DependentUpon>
     </None>
     <None Include="LAFAST_gestor_de_reservas.xsc">
       <DependentUpon>LAFAST_gestor_de_reservas.xsd</DependentUpon>
@@ -377,6 +420,9 @@
       <Project>{E9ED6C86-43E4-4A51-9C7D-BDA71DA790A7}</Project>
       <Name>Mi_Liberia_LF</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="travel_journey-15_icon-icons.com_56001.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

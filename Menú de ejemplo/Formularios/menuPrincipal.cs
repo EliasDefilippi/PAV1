@@ -91,10 +91,10 @@ namespace Menú_de_ejemplo
             chauAeropuerto.Show();
         }
 
-        private void buttonBuscarVueloIda_Click(object sender, EventArgs e)
+        private void btn_rep_Click(object sender, EventArgs e)
         {
-            Formularios.buscarVuelosYdestinosSoloIDA newVuelo = new Formularios.buscarVuelosYdestinosSoloIDA();
-            newVuelo.Show();
+            Formularios.Frm_reportes rp = new Formularios.Frm_reportes();
+            rp.Show();
         }
     }
 }

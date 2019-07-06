@@ -43,6 +43,7 @@
             this.comboxlocalidadBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aeropuertosTableAdapter = new Menú_de_ejemplo.aeropuertosTableAdapters.aeropuertosTableAdapter();
             this.aeropuertosTableAdapter1 = new Menú_de_ejemplo.aeropuertosDetinosTableAdapters.aeropuertosTableAdapter();
+            this.botonCerrarVuelosDestinos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.aeropuertosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aeropuertos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aeropuertosBindingSource1)).BeginInit();
@@ -143,12 +144,24 @@
             // 
             this.aeropuertosTableAdapter1.ClearBeforeFill = true;
             // 
+            // botonCerrarVuelosDestinos
+            // 
+            this.botonCerrarVuelosDestinos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonCerrarVuelosDestinos.BackgroundImage")));
+            this.botonCerrarVuelosDestinos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonCerrarVuelosDestinos.Location = new System.Drawing.Point(359, 12);
+            this.botonCerrarVuelosDestinos.Name = "botonCerrarVuelosDestinos";
+            this.botonCerrarVuelosDestinos.Size = new System.Drawing.Size(50, 35);
+            this.botonCerrarVuelosDestinos.TabIndex = 12;
+            this.botonCerrarVuelosDestinos.UseVisualStyleBackColor = true;
+            this.botonCerrarVuelosDestinos.Click += new System.EventHandler(this.botonCerrarVuelosDestinos_Click);
+            // 
             // CrearTramo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(412, 502);
+            this.Controls.Add(this.botonCerrarVuelosDestinos);
             this.Controls.Add(this.buttonAsignarVuelo);
             this.Controls.Add(this.tbx_distancia);
             this.Controls.Add(this.textBoxDuracionTramo);
@@ -185,5 +198,6 @@
         private aeropuertosDetinos aeropuertosDetinos;
         private System.Windows.Forms.BindingSource aeropuertosBindingSource1;
         private aeropuertosDetinosTableAdapters.aeropuertosTableAdapter aeropuertosTableAdapter1;
+        private System.Windows.Forms.Button botonCerrarVuelosDestinos;
     }
 }

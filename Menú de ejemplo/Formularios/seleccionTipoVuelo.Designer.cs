@@ -61,7 +61,7 @@
             this.btonIda.TabIndex = 2;
             this.btonIda.Text = "Ida";
             this.btonIda.UseVisualStyleBackColor = false;
-            this.btonIda.Click += new System.EventHandler(this.btonIda_Click);
+            
             // 
             // label1
             // 

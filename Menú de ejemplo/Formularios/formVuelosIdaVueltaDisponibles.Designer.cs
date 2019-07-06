@@ -73,12 +73,13 @@
             this.vuelosIda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.vuelosIda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.vuelosIda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.vuelosIda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.vuelosIda.Location = new System.Drawing.Point(12, 46);
+            this.vuelosIda.Location = new System.Drawing.Point(13, 47);
             this.vuelosIda.MultiSelect = false;
             this.vuelosIda.Name = "vuelosIda";
             this.vuelosIda.ReadOnly = true;
+            this.vuelosIda.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.vuelosIda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.vuelosIda.Size = new System.Drawing.Size(896, 337);
             this.vuelosIda.TabIndex = 4;

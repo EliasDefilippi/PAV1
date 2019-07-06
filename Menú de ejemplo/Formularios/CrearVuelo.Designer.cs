@@ -36,11 +36,12 @@
             this.dateTimeFechaVuelo = new System.Windows.Forms.DateTimePicker();
             this.comboBoxAvionVuelo = new System.Windows.Forms.ComboBox();
             this.comboBoxTarifaVuelo = new System.Windows.Forms.ComboBox();
-            this.combox_localidad = new Menú_de_ejemplo.combox_localidad();
             this.tarifasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.combox_localidad = new Menú_de_ejemplo.combox_localidad();
             this.tarifasTableAdapter = new Menú_de_ejemplo.combox_localidadTableAdapters.tarifasTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).BeginInit();
+            this.botonCerrarVuelosDestinos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tarifasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonConfirmarVuelo
@@ -106,19 +107,30 @@
             this.comboBoxTarifaVuelo.TabIndex = 5;
             this.comboBoxTarifaVuelo.ValueMember = "id_tarifa";
             // 
-            // combox_localidad
-            // 
-            this.combox_localidad.DataSetName = "combox_localidad";
-            this.combox_localidad.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tarifasBindingSource
             // 
             this.tarifasBindingSource.DataMember = "tarifas";
             this.tarifasBindingSource.DataSource = this.combox_localidad;
             // 
+            // combox_localidad
+            // 
+            this.combox_localidad.DataSetName = "combox_localidad";
+            this.combox_localidad.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tarifasTableAdapter
             // 
             this.tarifasTableAdapter.ClearBeforeFill = true;
+            // 
+            // botonCerrarVuelosDestinos
+            // 
+            this.botonCerrarVuelosDestinos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonCerrarVuelosDestinos.BackgroundImage")));
+            this.botonCerrarVuelosDestinos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonCerrarVuelosDestinos.Location = new System.Drawing.Point(366, 12);
+            this.botonCerrarVuelosDestinos.Name = "botonCerrarVuelosDestinos";
+            this.botonCerrarVuelosDestinos.Size = new System.Drawing.Size(50, 35);
+            this.botonCerrarVuelosDestinos.TabIndex = 12;
+            this.botonCerrarVuelosDestinos.UseVisualStyleBackColor = true;
+            this.botonCerrarVuelosDestinos.Click += new System.EventHandler(this.botonCerrarVuelosDestinos_Click);
             // 
             // CrearVuelo
             // 
@@ -126,6 +138,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(428, 580);
+            this.Controls.Add(this.botonCerrarVuelosDestinos);
             this.Controls.Add(this.comboBoxTarifaVuelo);
             this.Controls.Add(this.comboBoxAvionVuelo);
             this.Controls.Add(this.dateTimeFechaVuelo);
@@ -137,8 +150,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CrearVuelo";
             this.Load += new System.EventHandler(this.CrearVuelo_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarifasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_localidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,5 +168,6 @@
         private combox_localidad combox_localidad;
         private System.Windows.Forms.BindingSource tarifasBindingSource;
         private combox_localidadTableAdapters.tarifasTableAdapter tarifasTableAdapter;
+        private System.Windows.Forms.Button botonCerrarVuelosDestinos;
     }
 }

@@ -44,6 +44,9 @@ namespace Menú_de_ejemplo.Formularios
 
         }
 
-
+        private void botonCerrarVuelosDestinos_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

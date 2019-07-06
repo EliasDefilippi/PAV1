@@ -20,6 +20,9 @@ namespace Menú_de_ejemplo.Formularios
         private DateTime fecha_salida_vuelta;
         private Boolean tieneVuelta;
         private int idVuelo;
+        private int cantidad;
+        private String NombreAeropuertoOrigen;
+        private int precioIda;
 
 
 
@@ -45,25 +48,40 @@ namespace Menú_de_ejemplo.Formularios
               "  join [LAFAST_gestor_de_reservas].[dbo].[aeropuertos] on aeropuertos.id_aeropuerto = tramos.id_aeropuerto_origen " +
               "  where tramos.id_aeropuerto_destino ={1} and tramos.id_aeropuerto_origen ={0} and vuelos.fecha_salida_vuelo ='{2}';", propertyAeropuertoOrigen, propertyAeropuertoDestino,propertyFecha_salida_vuelo.ToString("yyyy-MM-dd"));
 
-            DataSet dt = Utilidades.Ejecutar(vuelos);
-
-
-            DataTable customerTable = dt.Tables["Table"];
-
-            customerTable.Columns[0].ColumnName = "Aeropuerto de Origen";
-            customerTable.Columns[2].ColumnName = "Nro de Vuelo";
-            customerTable.Columns[3].ColumnName = "Nro de Avion";
-            customerTable.Columns[4].ColumnName = "Fecha de Salida";
-            customerTable.Columns[5].ColumnName = "Clase";
-            customerTable.Columns[6].ColumnName = "Precio";
-
-           
-            vuelosIda.DataSource = customerTable;
-
-
-            if (tieneVuelta)
+            
+             DataSet dt = Utilidades.Ejecutar(vuelos);
+            if (dt.Tables["Table"].Rows.Count > 0)
             {
-                buttonVuelta.Text = "Seleccionar Asientos";
+
+                DataTable customerTable = dt.Tables["Table"];
+
+
+                customerTable.Columns[0].ColumnName = "Aeropuerto de Origen";
+                customerTable.Columns[2].ColumnName = "Nro de Vuelo";
+                customerTable.Columns[3].ColumnName = "Nro de Avion";
+                customerTable.Columns[4].ColumnName = "Fecha de Salida";
+                customerTable.Columns[5].ColumnName = "Clase";
+                customerTable.Columns[6].ColumnName = "Precio";
+                vuelosIda.DataSource = customerTable;
+
+                vuelosIda.Columns[1].Visible = false;
+
+                if (vuelosIda.Rows.Count > 0)
+                {
+                    this.idVuelo = int.Parse(vuelosIda.Rows[0].Cells["id_vuelo"].Value.ToString());
+                    this.NombreAeropuertoOrigen = vuelosIda.Rows[0].Cells["Aeropuerto de Origen"].Value.ToString();
+                    this.precioIda = int.Parse(vuelosIda.Rows[0].Cells["Precio"].Value.ToString());
+                }
+                if (tieneVuelta)
+                {
+                    buttonVuelta.Text = "Seleccionar Asientos";
+                }
+            }
+            else
+            {
+                MessageBox.Show("No Existen vuelos para la fecha asignada, por favor ingrese otra fecha");
+               
+
             }
 
         }
@@ -75,9 +93,15 @@ namespace Menú_de_ejemplo.Formularios
             if (!tieneVuelta)
             {
                 Formularios.formVuelosVueltaDisponibles vuelosDisponiblesVuelta = new Formularios.formVuelosVueltaDisponibles(propertyFecha_salida_vuelta, propertyAeropuertoDestino, propertyAeropuertoOrigen);
+                Formularios.formVuelosVueltaDisponibles vuelosDisponiblesVuelta = new Formularios.formVuelosVueltaDisponibles(propertyFecha_salida_vuelta, propertyAeropuertoDestino, propertyAeropuertoOrigen, fecha_salida_vuelo,propertyCantidad,propertyPrecioIda);
                 vuelosDisponiblesVuelta.propertyId_vuelo_salida = idVuelo;
-
+                vuelosDisponiblesVuelta.propertyNombreAeropuertoOrigen = this.NombreAeropuertoOrigen;
                 vuelosDisponiblesVuelta.Show();
+            }
+            else
+            {
+                MessageBox.Show("Por el momento solo se puede reservar pasajes de idea y vuelta..intente mas tarde");
+
             }
 
             this.Close();
@@ -104,6 +128,13 @@ namespace Menú_de_ejemplo.Formularios
             set { aeropuertoDestino = value; }
         }
 
+        public int propertyPrecioIda
+        {
+            get { return precioIda; }
+
+            set { precioIda = value; }
+        }
+
         public Boolean propertyTieneVuelta
         {
             get { return tieneVuelta; }
@@ -128,8 +159,25 @@ namespace Menú_de_ejemplo.Formularios
         {
 
             this.idVuelo = int.Parse(vuelosIda.Rows[e.RowIndex].Cells["id_vuelo"].Value.ToString());
+            this.NombreAeropuertoOrigen = vuelosIda.Rows[e.RowIndex].Cells["Aeropuerto de Origen"].Value.ToString();
+            this.precioIda = int.Parse(vuelosIda.Rows[e.RowIndex].Cells["Precio"].Value.ToString());
+           
 
     }
+
+
+        }
+        public String propertyNombreAeropuertoOrigen
+        {
+            get { return NombreAeropuertoOrigen; }
+
+            set { NombreAeropuertoOrigen = value; }
+        }
+
+        private void buttonConfirmar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
 }

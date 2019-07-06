@@ -65,5 +65,10 @@ namespace Menú_de_ejemplo.Formularios
             this.localidadesTableAdapter.Fill(this.combox_localidad.localidades);
 
         }
+
+        private void botonCerrarVuelosDestinos_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
